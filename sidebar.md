@@ -6,12 +6,23 @@
 
 ##ES6笔记
 
+1. [字符串的扩展](#docs/es6_string)
+1. [正则的扩展](#docs/es6_regex)
+1. [数值的扩展](#docs/es6_number)
+1. [数组的扩展](#docs/es6_array)
+1. [函数的扩展](#docs/es6_function)
+1. [对象的扩展](#docs/es6_object)
+1. [Symbol](#docs/es6_symbol)
+1. [Proxy](#docs/es6_proxy)
+1. [Reflect](#docs/es6_reflect)
 1. [var/let/const](#docs/es6_var_let_const)
 1. [Generator](#docs/es6_generator)
 1. [Class](#docs/es6_class)
 1. [Promise](#docs/es6_promise)
 1. [Decorator](#docs/es6_decorator)
+1. [Set、Map、WeakMap](#docs/es6_decorator)
 1. [Module](#docs/es6_module)
+1. [Iterator、for...of](#docs/es6_Iterator_for_of)
 
 ##打包工具
 
