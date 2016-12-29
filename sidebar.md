@@ -24,6 +24,16 @@
 1. [Module](#docs/es6_module)
 1. [Iterator、for...of](#docs/es6_Iterator_for_of)
 
+##js库使用方法
+
+1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
+1. [easyDialog](#docs/plugin_easyDialog)
+
+##插件用法
+
+1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
+1. [easyDialog](#docs/plugin_easyDialog)
+
 ##打包工具
 
 1. [gulp](#docs/pack_gulp)
@@ -33,9 +43,4 @@
 ##工具使用
 
 1. [fiddle](#docs/tool_fiddle)
-
-##插件用法
-
-1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
-1. [easyDialog](#docs/plugin_easyDialog)
-
+1. [git](#docs/git_fiddle)
