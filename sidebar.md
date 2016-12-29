@@ -24,10 +24,26 @@
 1. [Module](#docs/es6_module)
 1. [Iterator、for...of](#docs/es6_Iterator_for_of)
 
-##js库使用方法
+##HTML5
 
-1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
-1. [easyDialog](#docs/plugin_easyDialog)
+1. [WebRTC](#docs/html5_webrtc)
+1. [Mutation Observer](#docs/html5_mutation_observer)
+1. [WebSocket](#docs/html5_mutation_webSocket)
+1. [postMessage](#docs/html5_postMessage)
+1. [localStorage](#docs/html5_localStorage)
+1. [sessionStorage](#docs/html5_sessionStorage)
+1. [IndexedDB](#docs/html5_indexedDB)
+1. [Canvas](#docs/html5_canvas)
+
+
+##js库笔记
+
+1. [createJs](#docs/lib_createJs)
+1. [vueJs](#docs/lib_vueJs)
+1. [reactJs](#docs/lib_reactJs)
+1. [socket.IO](#docs/lib_socket_IO)
+1. [swfobject](#docs/lib_swfobject)
+1. [babel](#docs/lib_babel)
 
 ##插件用法
 
@@ -44,3 +60,7 @@
 
 1. [fiddle](#docs/tool_fiddle)
 1. [git](#docs/git_fiddle)
+1. [webstrom](#docs/git_webstrom)
+
+##测试链接
+1. [测试](#docs/var_let_const)
