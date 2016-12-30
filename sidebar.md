@@ -49,6 +49,7 @@
 
 1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
 1. [easyDialog](#docs/plugin_easyDialog)
+1. [page](#docs/plugin_page)
 
 ##打包工具
 
