@@ -44,6 +44,7 @@
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
 1. [babel](#docs/lib_babel)
+1. [RxJS](#docs/lib_RxJS)
 
 ##插件用法
 
