@@ -62,7 +62,7 @@
 
 ##工具使用
 
-1. [fiddle](#docs/tool_fiddle)
+1. [fiddler](#docs/tool_fiddler)
 1. [git](#docs/tool_git)
 1. [webstrom](#docs/tool_webstrom)
 1. [node](#docs/tool_node)
