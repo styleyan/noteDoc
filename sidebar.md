@@ -1,6 +1,6 @@
 # [_jer]()
 
-作者：[_嘟嘟的哒哒](http://www.isyxf.com)
+作者：[_dddd](http://www.isyxf.com)
 
 [ditto:searchbar]
 
@@ -45,6 +45,8 @@
 1. [swfobject](#docs/lib_swfobject)
 1. [babel](#docs/lib_babel)
 1. [RxJS](#docs/lib_RxJS)
+1. [VideoJS](#docs/lib_VideoJS)
+1. [flvJs](#docs/lib_flvJs)
 
 ##插件用法
 
@@ -56,13 +58,14 @@
 
 1. [gulp](#docs/pack_gulp)
 1. [webpack](#docs/pack_webpack)
-1. [fis](#docs/pack_fis)
+
 
 ##工具使用
 
 1. [fiddle](#docs/tool_fiddle)
-1. [git](#docs/git_fiddle)
-1. [webstrom](#docs/git_webstrom)
+1. [git](#docs/tool_git)
+1. [webstrom](#docs/tool_webstrom)
+1. [node](#docs/tool_node)
 
 ##测试链接
 1. [测试](#docs/var_let_const)
