@@ -43,7 +43,6 @@
 1. [reactJs](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
-1. [babel](#docs/lib_babel)
 1. [RxJS](#docs/lib_RxJS)
 1. [VideoJS](#docs/lib_VideoJS)
 1. [flvJs](#docs/lib_flvJs)
