@@ -53,19 +53,3 @@
 1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
 1. [easyDialog](#docs/plugin_easyDialog)
 1. [page](#docs/plugin_page)
-
-##打包工具
-
-1. [gulp](#docs/pack_gulp)
-1. [webpack](#docs/pack_webpack)
-
-
-##工具使用
-
-1. [fiddler](#docs/tool_fiddler)
-1. [git](#docs/tool_git)
-1. [webstrom](#docs/tool_webstrom)
-1. [node](#docs/tool_node)
-
-##测试链接
-1. [测试](#docs/var_let_const)
