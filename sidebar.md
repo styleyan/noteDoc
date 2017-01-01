@@ -2,7 +2,7 @@
 
 作者：[_dddd](http://www.isyxf.com)
 
-[ditto:searchbar]
+<!-- [ditto:searchbar] -->
 
 ##ES6笔记
 
