@@ -101,7 +101,7 @@ body {
     margin-bottom: 0.2rem;
     margin-left: 10px;
     padding: 0;
-
+    list-style-type: disc;
     text-indent: -5px;  /* to compensate for the padding for the dash */
     font-size: 0.7rem;
 }

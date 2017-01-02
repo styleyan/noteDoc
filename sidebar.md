@@ -46,6 +46,7 @@
 1. [RxJS](#docs/lib_RxJS)
 1. [VideoJS](#docs/lib_VideoJS)
 1. [flvJs](#docs/lib_flvJs)
+1. [weex](#docs/lib_weex)
 
 ##插件用法
 
