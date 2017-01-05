@@ -40,6 +40,7 @@
 
 1. [createJs](#docs/lib_createJs)
 1. [vueJs](#docs/lib_vueJs)
+	1. [vueJs](#docs/lib_vueJs_base)
 1. [reactJs](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
