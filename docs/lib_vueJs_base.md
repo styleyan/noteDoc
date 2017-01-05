@@ -31,13 +31,19 @@ var vm = new Vue({
       lastName:function(val){}
     },
     //暂定???
-    created:function(){},
-    //暂定???
     filters:{
       capitalize:function(){}
     },
     //暂定???
-    template:'<div>{{msg}}</div>'
+    template:'<div>{{msg}}</div>',
+    //暂定???
+    mounted:function(){},
+    /*在实例创建之后同步调用。此时实例已经结束解析选项，这意味着已建立：
+    数据绑定，计算属性，方法，watcher/事件回调。但是还没有开始 
+    DOM编译，$el 还不存在。*/
+    created:function(){},
+    //暂定??? 混合
+    mixins:[XXXX]
 });
 
 ```
@@ -49,6 +55,10 @@ var vm = new Vue({
 1.  Vue.set();
 //暂定???
 2.  Vue.nextTick();
+//暂定???
+3.  Vue.extend({});
+//暂定???
+4.  Vue.mixin({});
 ```
 
 
