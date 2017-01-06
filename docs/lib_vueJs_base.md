@@ -124,6 +124,22 @@ var app4 = new Vue({
 ```
 只要在控制台里，输入`app4.todos.pubh({text:'New item'})`。你会发现列表中多了一栏新内容。
 
+## 事件绑定
+```html
+<div id="app">
+  <button v-on:click="doSomething">提交按钮</button>
+</div>
+```
+简写
+```html
+<div id="app">
+  <button @click="doSomething">提交按钮</button>
+</div>
+```
+```javascript
+
+```
+
 
 
 
