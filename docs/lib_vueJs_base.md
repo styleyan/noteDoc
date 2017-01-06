@@ -63,7 +63,7 @@ var vm = new Vue({
 
 ## VueJs简单语法
 
-#### 1)、if条件语句
+####  1)、if条件语句
 
 ```html
 <div id="app-3">
@@ -81,7 +81,7 @@ var app3 = new Vue({
 ```
 当控制条设置`app3.seen = false`,“Now You see me” 就会消失。
 
-#### 2)、v-show条件指令
+####  2)、v-show条件指令
 v-show也是条件渲染指令，和v-if指令不同的是，`使用v-show指令的元素始终会被渲染到HTML，
 只是简单地为元素设置CSS的style属性。`
 ```html
@@ -98,16 +98,18 @@ var appShow = new Vue({
 })
 ```
 
-#### 3)、for循环语句
+####  3)、for循环语句
 ```html
 <div id="app-4">
   <ol>
-    <li v-for="(todo,index) in todos">
+    <li v-for="(value, key, index) in todos">
       {{todo.text}}:{{index}}
     </li>
   </ol>
 </div>
 ```
+上例中v-for中`value:值，key:键名，index:索引`
+
 ```javascript
 var app4 = new Vue({
   el:"#app-4",
