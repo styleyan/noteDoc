@@ -61,5 +61,68 @@ var vm = new Vue({
 4.  Vue.mixin({});
 ```
 
+## VueJs简单语法
+
+#### 1)、if条件语句
+
+```html
+<div id="app-3">
+  <p v-if="seen">Now you see me</p>
+</div>
+```
+
+```javascript
+var app3 = new Vue({
+  el:'#app-3',
+  data:{
+    seen:true
+  }
+});
+```
+当控制条设置`app3.seen = false`,“Now You see me” 就会消失。
+
+#### 2)、v-show条件指令
+v-show也是条件渲染指令，和v-if指令不同的是，`使用v-show指令的元素始终会被渲染到HTML，
+只是简单地为元素设置CSS的style属性。`
+```html
+<div id="appShow">
+  <p v-show="status">土豪喝汤配虾</p>
+</div>
+```
+```javascript
+var appShow = new Vue({
+  el:"#appShow",
+  data:{
+    status:false
+  }
+})
+```
+
+#### 3)、for循环语句
+```html
+<div id="app-4">
+  <ol>
+    <li v-for="(todo,index) in todos">
+      {{todo.text}}:{{index}}
+    </li>
+  </ol>
+</div>
+```
+```javascript
+var app4 = new Vue({
+  el:"#app-4",
+  data:{
+    todos:[
+      {text:'Learn JavaScript'},
+      {text:'Learn Vue'},
+      {text:'Build something awesome'}
+    ]
+  }
+})
+```
+只要在控制台里，输入`app4.todos.pubh({text:'New item'})`。你会发现列表中多了一栏新内容。
+
+
+
 
 
