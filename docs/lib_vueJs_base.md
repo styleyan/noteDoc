@@ -43,7 +43,9 @@ var vm = new Vue({
     DOM编译，$el 还不存在。*/
     created:function(){},
     //暂定??? 混合
-    mixins:[XXXX]
+    mixins:[XXXX],
+    //注册局部指令
+    directives:{}
 });
 
 ```
