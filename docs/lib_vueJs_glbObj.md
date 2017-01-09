@@ -152,7 +152,24 @@ new Vue({
 
 
 ## Vue.filter
-描述：注册或获取全局过滤器。
+描述：注册或获取全局过滤器，全局注册必须在实例Vue对象前。
+```javascript
+<div id="app">
+    //得到“5,filter;”
+    {{num | add}} 
+</div>
+```
+```javascript
+Vue.filter('add',function(value){
+  return value + ',filter;';
+});
+var app = new Vue({
+    el: '#app',
+    data: {
+      num: 5
+    }
+});
+```
 
 
 ## Vue.component
