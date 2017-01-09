@@ -152,7 +152,7 @@ new Vue({
 
 
 ## Vue.filter
-
+描述：注册或获取全局过滤器。
 
 
 ## Vue.component

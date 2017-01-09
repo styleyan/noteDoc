@@ -30,7 +30,7 @@ var vm = new Vue({
       firstName:function(val){},
       lastName:function(val){}
     },
-    //暂定???
+    //过滤器
     filters:{
       capitalize:function(){}
     },

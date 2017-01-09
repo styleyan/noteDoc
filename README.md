@@ -1,4 +1,4 @@
-# 学习笔记
+# DAY DAY UP
 
-1. sdfsdf
-1. sdfsdf
+不积跬步，无以至千里；不积小流，无以成江海。
+[![cover](images/cover_thumbnail.jpg)](images/cover_thumbnail.jpg)
