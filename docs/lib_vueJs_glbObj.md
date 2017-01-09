@@ -156,13 +156,16 @@ new Vue({
 ```javascript
 <div id="app">
     //得到“5,filter;”
-    {{num | add}} 
+    {{num | add | del}} 
 </div>
 ```
 ```javascript
 Vue.filter('add',function(value){
   return value + ',filter;';
 });
+Vue.filter('del',function(value){
+  return value + '+del';
+})
 var app = new Vue({
     el: '#app',
     data: {
@@ -170,10 +173,61 @@ var app = new Vue({
     }
 });
 ```
+`数据num会先通过add过滤器，然后在del过滤器，最后显示出来。`
 
 
 ## Vue.component
+描述：注册或获取全局组件。注册还会自动使用给定的id设置组件的名称
 
+####注册全局组件
+```javascript
+<div id="testApp">
+  <my-component></my-component> //A custon component!vueJs1
+  <my-component></my-component> //A custon component!vueJs1
+  <my-component></my-component> //A custon component!vueJs1
+</div>
+```
+
+```javascript
+Vue.component('my-component', {
+  template: '<div>A custon component!{{ message }}</div>',
+  //必须是函数,不然会出现数据共享。
+  data: function(){
+    return {
+      message:'vueJs'
+    }
+  }
+});
+new Vue({
+  el: '#testApp',
+})
+```
+####注册局部组件
+```html
+<div id="testApp">
+  <my-component></my-component>
+  <my-component></my-component>
+  <my-component></my-component>
+</div>
+```
+```javascript
+var Child = {
+  template: '<div>A custom component!</div>'
+}
+new Vue({
+  el: '#testApp',
+  data:{
+    mumber:666
+  },
+  components:{
+     'my-component': Child
+  }
+});
+```
+
+
+
+注册一个组件的基本格式。
 
 
 ## Vue.use

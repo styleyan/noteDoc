@@ -45,7 +45,9 @@ var vm = new Vue({
     //暂定??? 混合
     mixins:[XXXX],
     //注册局部指令
-    directives:{}
+    directives:{},
+    //注册局部组件
+    components:{"my-component":cmp}
 });
 
 ```
