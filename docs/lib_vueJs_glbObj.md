@@ -176,6 +176,7 @@ var app = new Vue({
 `数据num会先通过add过滤器，然后在del过滤器，最后显示出来。`
 
 
+
 ## Vue.component
 描述：注册或获取全局组件。注册还会自动使用给定的id设置组件的名称
 
@@ -187,7 +188,6 @@ var app = new Vue({
   <my-component></my-component> //A custon component!vueJs1
 </div>
 ```
-
 ```javascript
 Vue.component('my-component', {
   template: '<div>A custon component!{{ message }}</div>',
@@ -202,7 +202,8 @@ new Vue({
   el: '#testApp',
 })
 ```
-####注册局部组件
+
+#### 注册局部组件
 ```html
 <div id="testApp">
   <my-component></my-component>
@@ -220,14 +221,91 @@ new Vue({
     mumber:666
   },
   components:{
-     'my-component': Child
+     'myComponent': Child
   }
 });
 ```
 
+####需要注意的地方
+`定义组件名可以大小写混合，但在html引用必须把大写改小写并添加"-"`。
+```html
+<div id="testApp">
+  <myComponent></myComponent>
+  <myComponent></myComponent>
+  <myConponent></myConponent>
+</div>
+```
+```javascript
+var Chiild = {
+  template: '<div>A custom component!</div>'
+};
+new Vue({
+  el:' #testApp',
+  data:{
+    number:66666
+  },
+  components:{
+    'myComponent': Child
+  }
+});
+```
+你会发现上面并不会渲染出来，<br>
+`需要把<myComponent></myComponent>,改为<my-component></my-component>`。
 
+#### 使用Prop传递数据
+prop是父组件用来传递数据的一个自定义属性。子组件需要显示地用`props`选项声明`props`，`props只能是一个数组形式出现`:
+```javascript
+Vue.component('child',{
+  // 声明 props
+  props: ['message'],
+  // 就像 data 一样，prop 可以用在模板内容
+  // 同样也可以再vm 实例中像 "this.messge" 这样使用
+  template: '<span>{{ message }}</span>'
+});
+new Vue({
+  el: '#testApp',
+  data: {
+    parentMessage: 'show yxf'
+  }
+});
+```
+然后向它传入一个普通字符串：得到`<span>parentMessage</span>`
+```html
+<div id="testApp">
+  <child message="parentMessage"></child>
+</div>
+```
+如果想把父组件的数据传递到子组件，需要在子组件属性前加“：”<br>
+显示`<span>show yxf</span>`:
+```html
+<div id="testApp">
+  <child :message="parentMessage"></child>
+</div>
+```
 
-注册一个组件的基本格式。
+#### 大小写区分
+HTML 特性不区分大小写。当使用非字符串模版时，prop的名字形式会从 camelCase 转为 kebab-case（短横线隔开）：
+```javascript
+Vue.component('child',{
+  // 声明 props
+  props: ['myMessage'],
+  // 就像 data 一样，prop 可以用在模板内容
+  // 同样也可以再vm 实例中像 "this.messge" 这样使用
+  template: '<span>{{ myMessage }}</span>'
+});
+var vm = new Vue({
+  el: '#testApp',
+  data: {
+    parentMessage: 'show yxf'
+  }
+});
+```
+```html
+<div id="testApp">
+  <child my-message="parentMessage"></child>
+</div>
+```
+
 
 
 ## Vue.use
