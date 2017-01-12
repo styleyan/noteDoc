@@ -355,7 +355,109 @@ MyPlugin.install = function(Vue,options){
 ## Vue.mixin
 描述：全局注册一个混合，影响注册之后所有创建的没个Vue实例。插件作者可以使用混合，向组件注入自定义的行为。`不推荐在应用代码中使用`。
 
+####基础用法
+```javascript
+// 定义一个混合对象
+var myMinin = {
+  created: function(){
+      this.hello()
+  },
+  methods:{
+    mello: function(){
+      console.log('hello form minxin!')
+    }
+  }
+};
 
+// 定义一个使用混合对象的组件
+var Component = Vue.extend({
+  mixins: [myMixin]
+})
+var component = new Component() // -> "hello form mixin"
+```
+
+####选项合并
+当组件和混合对象含有同名选项时，这些选项将以恰当的方式混合。比如，同名钩子函数将混合为一个数组，因此都将被调用。另外，`混合对象的钩子将在组件自身钩子之前调用`：
+
+```javascript
+var mixin = {
+  created: function(){
+    console.log('混合对象的钩子被调用')
+  }
+}
+
+new Vue({
+  mixins: [mixin],
+  created: function(){
+    console.log('组件钩子被调用');
+  }
+});
+
+// -> "混合对象的钩子被调用"
+// -> "组件钩子被调用"
+```
+
+值为对象的选项，例如`methods`,`components`和`directives`,将被混合为同一个对象。
+两个对象键名冲突时，取组件对象的键值对。<br>
+`注意：Vue.extend()也使用同样的策略进行合并。`
+```javascript
+  //定义一个混合对象
+var myMixin = {
+  methods: {
+    foo: function(){
+      console.log('foo');
+    },
+    conflicting: function(){
+      console.log('from mixin')
+    }
+  }
+};
+
+var vm = new Vue({
+  mixins: [myMixin],
+  methods: {
+    bar: function(){
+      console.log('bar');
+    },
+    conflicting:function(){
+      console.log('form self')
+    }
+  }
+});
+
+vm.foo(); //foo
+vm.bar(); //bar
+vm.conflicting();  //from self
+```
+
+####全局混合使用
+也可以全局注册混合对象。注意使用！`一旦使用全局混合对象，将会影响到所有之后创建的Vue实例。`使用恰当时，可以为自定义对象注入处理逻辑。
+```javascript
+// 为自定义的选项 'myOption' 注入一股处理器。
+Vue.mixin({
+  created: function(){
+    var myOption = this.$options.myOption;
+    if(myOption){
+      console.log(myOption)
+    }
+  }
+});
+
+new Vue({
+  myOption: 'hello!'
+});
+// -> "hello!"
+```
+
+####自定义选项混合策略
+自定义选项将使用默认策略，即简单地覆盖已有值。如果想让自定义选项自定义逻辑混合，可以向`Vue.config.optionMergeStrategies`添加一个函数：
+```javascript
+Vue.config.optionMergeStrategies.myOption = function(toVal,fromVal){
+  // return mergedVal
+}
+```
+对于大多数对象选项，可以使用`methods`的合并策略：
 
 
 ## Vue.compile
+
