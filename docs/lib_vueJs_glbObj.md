@@ -309,10 +309,52 @@ var vm = new Vue({
 
 
 ## Vue.use
+描述：`Vue.use`会自动阻止注册相同插件多次，届时只会注册一次该插件。
 
+####编写插件
+```javascript
+MyPlugin.install = function(Vue,options){
+  // 1. 添加全局方法或属性
+  Vue.myGlobalMethod = function(){
+    //逻辑...
+  }
 
+  // 2.添加全局资源
+  Vue.directive('my-directive',{
+    bind(el,binding,vnode,oldVnode){
+      //逻辑...
+    }
+    ...
+  })
+
+  // 3.注入组件
+  Vue.mixin({
+    created: function(){
+      //逻辑...
+    }
+    ...
+  })
+
+  // 4.添加实例方法
+  Vue.prototype.$myMethod = function(options){
+      //逻辑
+  }
+}
+```
+
+####使用插件
+通过全局方法Vue.use()使用插件：
+```javascript
+  // 调用 MyPlugin.install(Vue)
+  Vue.use(MyPlugin)
+
+  //也可以传入一个选项对象：
+  Vue.use(MyPlugin,{someOption:true})
+```
 
 ## Vue.mixin
+描述：全局注册一个混合，影响注册之后所有创建的没个Vue实例。插件作者可以使用混合，向组件注入自定义的行为。`不推荐在应用代码中使用`。
+
 
 
 
