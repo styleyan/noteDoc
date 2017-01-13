@@ -460,4 +460,15 @@ Vue.config.optionMergeStrategies.myOption = function(toVal,fromVal){
 
 
 ## Vue.compile
+描述：在render函数中编译模板字符串，只在独立构建时有效。
+```javascript
+var res = Vue.compile('<div><span>{{msg}}</span></div>');
 
+new Vue({
+  data: {
+    msg: 'hello'
+  },
+  render: res.render,
+  staticRenderFns: res.staticRenderFns
+});
+```
