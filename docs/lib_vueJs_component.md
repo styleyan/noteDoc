@@ -21,12 +21,45 @@ Vue.component('child',{
 //得到结果：结果展示：hello!
 ```
 
-#### 大小写、短横线隔开
-HTML特性不区分大小写，当只用非字符串模板时，prop的名字形式会从camelCase转为camel-case(短横线隔开)：
+## camelCase vs. kebab-case
+描述：HTML特性不区分大小写，当只用非字符串模板时，prop的名字形式会从camelCase转为camel-case(短横线隔开)：
 ```javascript
 Vue.component('child',{
   //camelCase in javascript
   props: ['myMessage'],
+  //给组件赋值
   template: '<span>{{ myMessage }}</span>'
-})
+});
+
+// html需要把大小写改为小横线，以下会得到hello
+<child my-message="hello!"></child>
+
+//如果未转化，页面什么也不会显示
+<child myMessage="hello!"></child>
 ```
+
+## 动态Prop
+描述：类似于用'v-bind'绑定HTML特性到一个表达式，也可以用`v-bind`动态绑定props的值到父组件的数据中。每当父组件的数据变化时，该变化也会传导给子组件：
+```html
+<div id="app">
+  <input v-model="parentMsg"><br>
+  <child v-bind:my-message="parentMsg"></child>
+</div>
+```
+```javascript
+Vue.component('child',{
+  props:["myMessage"],
+  template: '<span>{{myMessage}} --> child测试'
+});
+
+var vm = new Vue({
+  el: '#app',
+  data: {
+    parentMsg: ''
+  }
+});
+
+//改动vm.parentMsg数据，组件里面的数据也会跟着改变
+vm.parentMsg = 'parentMsg';
+```
+
