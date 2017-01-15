@@ -63,3 +63,6 @@ var vm = new Vue({
 vm.parentMsg = 'parentMsg';
 ```
 
+## propsData
+描述：创建实例时传递props，主要作用是方便测试。
+限制：`只用于new创建的实例中`;
