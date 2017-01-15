@@ -41,7 +41,7 @@
 1. [createJs](#docs/lib_createJs)
 1. [vueJs](#docs/lib_vueJs)
 	1. [基础知识](#docs/lib_vueJs_base)
-	1. [component创建组件](#docs/lib_vueJs_component)
+	1. [prop简介](#docs/lib_vueJs_props)
 	1. [directive自定义指令](#docs/lib_vueJs_component)
 	1. [插件使用与开发](#docs/lib_vueJs_plugin)
 	1. [路由](#docs/lib_vueJs_router)
