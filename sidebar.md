@@ -38,22 +38,23 @@
 
 ##js库笔记
 1. [jquery](#docs/lib_jquery)
-1. [createJs](#docs/lib_createJs)
-1. [vueJs](#docs/lib_vueJs)
+1. [create.Js](#docs/lib_createJs)
+1. [vue.Js](#docs/lib_vueJs)
 	1. [基础知识](#docs/lib_vueJs_base)
 	1. [prop简介](#docs/lib_vueJs_props)
 	1. [directive自定义指令](#docs/lib_vueJs_component)
 	1. [插件使用与开发](#docs/lib_vueJs_plugin)
 	1. [路由](#docs/lib_vueJs_router)
 	1. [全局API整理](#docs/lib_vueJs_glbObj)
-1. [reactJs](#docs/lib_reactJs)
+1. [react.Js](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
-1. [RxJS](#docs/lib_RxJS)
-1. [VideoJS](#docs/lib_VideoJS)
-1. [flvJs](#docs/lib_flvJs)
-1. [weex](#docs/lib_weex)
-1. [VelocityJs](#docs/lib_velocity)
+1. [Rx.JS](#docs/lib_RxJS)
+1. [Video.JS](#docs/lib_VideoJS)
+1. [flv.Js](#docs/lib_flvJs)
+1. [weex.js](#docs/lib_weex)
+1. [Velocity.Js](#docs/lib_velocity)
+1. [hilo.Js](#docs/lib_hilo)
 
 ##插件用法
 
