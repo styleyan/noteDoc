@@ -47,7 +47,9 @@ var vm = new Vue({
     //注册局部指令
     directives:{},
     //注册局部组件
-    components:{"my-component":cmp}
+    components:{"my-component":cmp},
+    //???
+    mounted:function(){}
 });
 
 ```
