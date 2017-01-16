@@ -46,6 +46,7 @@
 	1. [插件使用与开发](#docs/lib_vueJs_plugin)
 	1. [路由](#docs/lib_vueJs_router)
 	1. [全局API整理](#docs/lib_vueJs_glbObj)
+	1. [数据响应式变化](#docs/lib_vueJs_response)
 1. [react.Js](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
