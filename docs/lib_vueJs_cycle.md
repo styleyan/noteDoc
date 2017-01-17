@@ -103,3 +103,15 @@ var vm = new Vue({
 ## vm.$destroy()
 描述：完全销毁一个实例，清理它与其它实例的连接，解绑它的全部指令及时间监听器。触发deforeDestroy和destroyed的钩子。<br>
 `在大多数场景中不应该调用这个方法。最好使用v-if和v-for指令以数据驱动的方式控制字组件的生命周期。`
+
+
+## vm.$watch( expOrFn, callback, [options] )
+
+
+
+
+## vm.$set( object, key, value )
+
+
+
+## vm.$delete( object, key )

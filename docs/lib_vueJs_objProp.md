@@ -106,3 +106,40 @@ Vue.component('blog-post',{
 ```
 
 
+## vm.$scopedSlots 
+类型：`{ [name: string]: props => VNode | Array<VNode> }`<br>
+操作：`只读`<br>
+描述：????
+
+
+## vm.$refs
+类型：`Object`<br>
+操作：`只读`<br>
+描述：一个对象，其中包含了所有拥有`ref`注册的子组件。
+```html
+<div id="app">
+    <p ref="p">hello</p>
+    <child-comp ref="child"></child-comp>
+</div>
+```
+```javascript
+Vue.component('childComp',{
+    template:'<div>这是个</div>'
+});
+var vm = new Vue({
+    el: '#app',
+    data: {
+        name: ''
+    }
+});
+
+vm.$refs.child // -> 获得childComp组件
+```
+
+
+## vm.$isServer
+类型：`boolean`<br>
+操作：`只读`<br>
+描述：当前Vue实例是否运行于服务器。
+
+
