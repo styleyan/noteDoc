@@ -47,6 +47,7 @@
 	1. [全局API整理](#docs/lib_vueJs_glbObj)
 	1. [数据响应式变化](#docs/lib_vueJs_response)
 	1. [实例方法/生命周期](#docs/lib_vueJs_cycle)
+	1. [实例属性](#docs/lib_vueJs_objProp)
 1. [react.Js](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)

@@ -4,19 +4,21 @@
 
 ```javascript
 var vm = new Vue({
-    //选取DOM
+    //挂载到页面元素，确定vue的作用范围，外部可通过vm.$el访问，得到的是一个原生dom元素，可进行对应操作
     el:'#box',
-    //数据
+    //自定义属性，外部可通过vm.$options访问
+    a: '', 
+    //实例属性都在这里面，外部通过实例名,即vm.$data调用
     data:{
       msg:'土豪喝汤配虾',
       name:'_dddd'
     },
-    //保存事件方法
+    //实例方法都在这里
     methods:{
       addItem:function(){},
       removeItem:function(){}  
     },
-    //监听属性变化
+    //计算属性，也是实例属性，只是以方法的形式存在，并可以有逻辑运算的属性
     computed:{
       msg:function(){},
       //还可以添加get/set方法
@@ -25,7 +27,9 @@ var vm = new Vue({
         set:function(){}
       }
     },
-    //观察 Vue 实例上的数据变动。当一些数据需要根据其它数据变化时使用
+    //对data和computed的属性进行监听，当属性有变化时自动触发，以方法的形式存在 外部通过$.watch调用
+    //注意：以上属性和方法，实例内部都通过this调用,外部则通过对应的实例方法访问
+    //在vue的生命周期过程中，它自身还提供了一系列的钩子函数供我们使用，进行自定义逻辑的注入：
     watch:{
       firstName:function(val){},
       lastName:function(val){}
@@ -42,6 +46,19 @@ var vm = new Vue({
     数据绑定，计算属性，方法，watcher/事件回调。但是还没有开始 
     DOM编译，$el 还不存在。*/
     created:function(){},
+    //模块编译之前
+    beforeCompile: function(){},
+    //模块编译之后；即模板占位符被是内容替换
+    compiled: function(){},
+    //模板插入到文档中了；相当于window.onload
+    ready: function(){},
+    //============================================================
+    //注意： 以上4个方法在对象被实例化后即按顺序执行，以下2个方法需通过事件触发，并通过调用 实例名.$destory() 才执行
+    //============================================================
+    //对象销毁之前
+    beforeDestroy: function(){},
+    //对象销毁之后
+    destroyed: function(){},
     //暂定??? 混合
     mixins:[XXXX],
     //注册局部指令
