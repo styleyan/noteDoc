@@ -106,6 +106,68 @@ var vm = new Vue({
 
 
 ## vm.$watch( expOrFn, callback, [options] )
+参数：
+- `{string | function} expOrFn`
+- `{Function} callback`
+- `{Object} [options]`
+  - `{boolean} deep`
+  - `{boolean} immediate`
+
+返回值：`{Function} unwatch`
+
+描述：观察Vue实例变化的一个表达式或计算属性函数，回调函数得到的参数为新值和旧值。表达式只接受监督的键路径，对于更复杂的表达式，用一个函数取代。
+
+注意：`在变异（不是替换）对象或数组时，旧值将与心智相同，因为他们的应用指向同一个对象/数组。Vue不会保留变异之前值的副本`。
+```javascript
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      a: {
+        b: {
+          c: 'aaa'
+        }
+      }
+    }
+  });
+  
+  //在控制台添加监听方法
+  vm.$watch('a.b.c',function(newVal,oldVal){
+      console.log('oldVal：' + oldVal);
+      console.log('newVal：' + newVal);
+  });
+
+  vm.a.b.c = '这是测试';
+  //输出：oldVal：aaa，newVal：这是测试
+```
+`通过函数的形式来实现监听`
+```javascript
+var vm = new Vue({
+	el: '#app',
+	data: {
+		a: 'yxf',
+		b: 'wn'
+	}
+});
+//通过函数监听2个函数变化
+vm.$watch(function () {
+	return this.a + this.b;
+},function(newVal,oldVal) {
+	console.log('newVal:' + newVal);
+	console.log('oldVal:' + oldVal);
+});
+```
+`vm.$watch`返回一个取消观察函数，用来停止触发回调：
+```javascript
+var unwatch = vm.$watch('a',function(newVal,oldVal){
+	//一些代码
+});
+//之后取消观察
+unwatch();
+```
+
+
+
+
 
 
 
