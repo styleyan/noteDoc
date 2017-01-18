@@ -71,6 +71,8 @@ var vm = new Vue({
 });
 ```
 
+
+
 ## vm.$nextTick([callback])
 描述：将回调延迟到下次DOM更新循环之后执行。在修改数据之后立即使用它，然后等待DOM更新。它跟全局方法Vue.nextTick一样，不同的是回调的this自动绑定到调用他的实例上。
 ```html
@@ -100,9 +102,13 @@ var vm = new Vue({
 });
 ```
 
+
+
 ## vm.$destroy()
 描述：完全销毁一个实例，清理它与其它实例的连接，解绑它的全部指令及时间监听器。触发deforeDestroy和destroyed的钩子。<br>
 `在大多数场景中不应该调用这个方法。最好使用v-if和v-for指令以数据驱动的方式控制字组件的生命周期。`
+
+
 
 
 ## vm.$watch( expOrFn, callback, [options] )
@@ -139,7 +145,7 @@ var vm = new Vue({
   vm.a.b.c = '这是测试';
   //输出：oldVal：aaa，newVal：这是测试
 ```
-`通过函数的形式来实现监听`
+`通过函数表达式来实现监听,当a、b数据有变化会先把a、b值相加，然后返回到回调函数。`
 ```javascript
 var vm = new Vue({
 	el: '#app',
@@ -166,14 +172,33 @@ unwatch();
 ```
 
 
-
-
-
-
-
-
 ## vm.$set( object, key, value )
+参数：`{Object} object || {string} key  || {any} value`<br>
+返回值：`设置的值。`<br>
+描述：`设置对象的属性，如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。这个方法主要用于避开 Vue 不能检测属性被添加的限制`。
+```html
+<div id="app">
+	<span>name：{{ user.name }}</span>
+	<span>sex：{{ user.sex }}</span>
+</div>
+```
+```javascript
+var vm = new Vue({
+	el: '#app',
+	data: {
+		user: {
+			name: 'yxf'
+		}
+	}
+});
+
+vm.$set(vm.user,"sex","1111"); // -> sex变化为1111
+```
+备注：`如果用vm.user.sex直接赋值不会立即更新视图，需要其他数据更新或用vm.$set(vm.user,"sex","bbbb")后然后在用vm.user.sex才会立即更新视图`。
 
 
 
 ## vm.$delete( object, key )
+参数：`{Object} object || {string} key`<br>
+返回值：`设置的值。`<br>
+描述：`删除对象的属性。如果对象是响应式的，确保删除能触发更新视图。这个方法主要用于避开 Vue 不能检测到属性被删除的限制`。
