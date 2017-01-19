@@ -8,6 +8,7 @@
 [vonic]: https://wangdahoo.github.io/vonic/docs/
 [rubik]: https://ccforward.github.io/rubik
 [vue-resource]: https://github.com/vuejs/vue-resource
+[nuxt]: https://github.com/nuxt/nuxt.js
 
 [vueClick事件]: http://jiangjiu.leanapp.cn/article/578c4463a633bd00589330d3
 [vue编译事例]: https://github.com/yangjunjun/vue-pack-demo
@@ -36,4 +37,9 @@
 
 ## vue插件
 - [vue-resource][]	  
--  vue-router : 单页应用-路由插件
+- [nuxt][]	  
+-  vue-loader
+-  vue-cli
+-  vue-vuex
+-  vue-router
+-  vue-devtool
