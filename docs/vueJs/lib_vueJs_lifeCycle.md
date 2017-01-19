@@ -57,4 +57,4 @@
 描述：Vue实例销毁后调用，调用后Vue实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。
 
 
-[![cover](images/lifecycle.png)](docs/images/lifecycle.png)
+[![生命周期流程图](docs/images/lifecycle.png)](docs/images/lifecycle.png)
