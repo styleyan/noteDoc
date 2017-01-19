@@ -38,6 +38,7 @@
 ##前端框架笔记
 1. [jquery](#docs/lib_jquery)
 1. [create.Js](#docs/createJs/lib_createJS_info)
+	1. [实例返回属性/方法说明](#docs/lib_createJS_newDeatail)
 	1. [easelJs api笔记](#docs/lib_createJS_easelJs)
 	1. [tweenJs api笔记](#docs/lib_createJS_tweenJs)
 	1. [soundJs api笔记](#docs/lib_createJS_soundJs)
