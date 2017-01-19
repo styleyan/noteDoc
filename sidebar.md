@@ -37,7 +37,11 @@
 
 ##前端框架笔记
 1. [jquery](#docs/lib_jquery)
-1. [create.Js](#docs/lib_createJs)
+1. [create.Js](#docs/createJs/lib_createJS_info)
+	1. [easelJs api笔记](#docs/lib_createJS_easelJs)
+	1. [tweenJs api笔记](#docs/lib_createJS_tweenJs)
+	1. [soundJs api笔记](#docs/lib_createJS_soundJs)
+	1. [PreloadJS api笔记](#docs/lib_createJS_preloadJs)
 1. [vue.Js](#docs/lib_vueJs)
 	1. [基础知识](#docs/lib_vueJs_base)
 	1. [prop简介](#docs/lib_vueJs_props)
