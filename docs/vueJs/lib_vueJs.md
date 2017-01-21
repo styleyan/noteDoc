@@ -12,17 +12,20 @@
 
 [vueClick事件]: http://jiangjiu.leanapp.cn/article/578c4463a633bd00589330d3
 [vue编译事例]: https://github.com/yangjunjun/vue-pack-demo
-[vue学习资料]: https://github.com/vuejs/awesome-vue#syntax-highlighting
-[vue-validator]: http://vuejs.github.io/vue-validator/zh-cn/index.html
 [vue官网讲解]: https://github.com/bhnddowinf/vuejs2-learn
+[vue.js资源汇总]: http://blog.csdn.net/qianhong_/article/details/52522645
 
+
+[vue-vuex]: https://vuex.vuejs.org/zh-cn/
+[vue-router]: https://router.vuejs.org/zh-cn/
+[vue资源]: https://github.com/vuejs/awesome-vue
 
 ## 学习相关网站
 - [vueClick事件][]
 - [vue编译事例][]
-- [vue学习资料][]
-- [vue-validator][]
 - [vue官网讲解][]
+- [vue.js资源汇总][]
+- [vue资源][]
 
 
 ## vue Ui组件
@@ -40,6 +43,6 @@
 - [nuxt][]	  
 -  vue-loader
 -  vue-cli
--  vue-vuex
--  vue-router
+-  [vue-vuex][]
+-  [vue-router][]
 -  vue-devtool

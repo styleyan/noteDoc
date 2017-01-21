@@ -58,3 +58,7 @@
 
 
 [![生命周期流程图](docs/images/lifecycle.png)](docs/images/lifecycle.png)
+
+
+## 推荐博客
+> * [Vue.js 生命周期和route的生命周期讲解](http://www.jianshu.com/p/e9f884b6ba6c)

@@ -55,6 +55,7 @@
 	1. [实例属性](#docs/vueJs/lib_vueJs_objProp)
 	1. [实例事件](#docs/vueJs/lib_vueJs_objEvent)
 	1. [实例生命周期](#docs/vueJs/lib_vueJs_lifeCycle)
+	1. [组件通信几种方法](#docs/vueJs/lib_vueJs_message)
 1. [react.Js](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
 1. [swfobject](#docs/lib_swfobject)
