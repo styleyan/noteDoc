@@ -10,3 +10,4 @@ CreateJS是基于HTML5开发的一套模块化的库和工具。基于这些库�
 ## 学习网站地址
 - [CreateJS中文网](http://www.createjs.cc/tweenjs/ "CreateJS中文网")
 - [学习CreateJS 博文](http://www.ajexoop.com/wordpress/ "学习CreateJS 博文")
+- [极客学院学习视频](http://search.jikexueyuan.com/course?q=createjs "极客学院学习视频")
