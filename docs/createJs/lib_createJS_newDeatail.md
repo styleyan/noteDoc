@@ -50,3 +50,14 @@ image.set({})  //原件设置属性
 
 
 ```
+
+
+## new createjs.Shape();
+描述：绘制形态
+```javascript
+var React = new createjs.Shape();
+// 设置背景颜色
+Rect.graphics.beginFill('#ff0000');
+// 设置 left：5、top：5、宽：50、高：50大小的矩形。
+Rect.graphics.drawRect(5,5,50,50);
+```
