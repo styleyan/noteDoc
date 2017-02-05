@@ -20,7 +20,32 @@ var Prefile = Vue.extend({
 });
 
 //创建 Profile 实例，并挂载到一个元素上。
-new Profile().$mount('#mount-point');
+new Profile().$mount('#mount-point'); 
+//另一种挂载到一个元素上方式。
+new Profile({
+  el: '#mount-point'
+});
+```
+通过Vue.extend方法返回的是初始化构造函数与直接使用Vue一样，`区别：使用Vue.extend带有默认属性`;
+```javascript
+  var Reault = Vue.extend({
+    data: function(){
+       return {showModal: "这是测试"}
+    }
+  });
+
+  //Reault 初始构造函数
+  function VueComponent(options) {
+    this._init(options);
+  }
+  //直接使用Vue 
+  function Vue(options){
+    if ("development" !== 'production' &&
+      !(this instanceof Vue$3)) {
+      warn('Vue is a constructor and should be called with the `new` keyword');
+    }
+    this._init(options);
+  }
 ```
 
 ## Vue.nextTick
