@@ -6,10 +6,8 @@
 - 可以设置两个过滤器参数，前提是这两个过滤器处理的不冲突；
 - 用户从input输入的数据在回传到model之前也可以先处理；
 
-## 默认自带过滤器
 
-
-## 简单定义个一个过滤
+## 简单定义一个过滤
 ```html
 <div id="app">
 　　<input type="text" v-model="name">
@@ -76,4 +74,14 @@ filters的function默认第一位参数,为当前的message的值value，`在写
       name: 22
     }
   });
+```
+
+## 常用自定义过滤
+uppercase(首字母大写)
+```javascript
+Vue.filter('uppercase',function(value){
+	if(!value) return '';
+	value = value.toString();
+	return value.charAt(0).toUpperCase() +　value.slice(1);
+});
 ```
