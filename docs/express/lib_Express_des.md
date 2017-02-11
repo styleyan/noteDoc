@@ -1,6 +1,6 @@
 # express 安装
 
-## 安装环境
+## 安装需要环境
 ```javascript
 //node版本需要大于等于v6.6.0
 node >= v6.6.0
@@ -32,12 +32,25 @@ npm start  //预览地址: http://localhost:3000/
 
 
 ## 修改配置
-1)、修改代码后自动刷新`进入到myapp文件 > package.json文件`
+1)、【修改代码后自动刷新】`进入到myapp文件 > package.json文件`
 ```javascript
 //把
 "start": "node ./bin/www"
 //修改为
 "start": "supervisor ./bin/www"
+```
+
+2)、【安装ejs】在myapp目录下运行`npm install ejs`，然后找到app.js
+```javascript
+//添加
+var ejs = require('ejs');
+
+//找到16行以下添加
+app.engine('.html',ejs.__express) ; 
+
+//把 app.set('view engine', 'jade')修改为
+app.set('view engine', 'html');
+
 ```
 
 

@@ -69,20 +69,13 @@
 1. [hilo.Js](#docs/lib_hilo)
 1. [rax.Js](#docs/lib_rax)
 
-##插件用法
-1. [mCustomScrollbar](#docs/plugin_mCustomScrollbar)
-1. [easyDialog](#docs/plugin_easyDialog)
-1. [page](#docs/plugin_page)
-
 ##后端框架笔记
-1. [Express.Js](#docs/lib_Express)
-    1. [环境安装](#docs/lib_Express_des)
-
+1. [Express.Js](#docs/express/lib_Express_des)
+    1. [ejs模板](#docs/express/lib_Express_ejs)
+    2. [post/get请求](#docs/express/lib_Express_post)
 
 ##性能优化
 1. [性能优化文章](#docs/optimal)
-
-
 
 ## 前端监控
 1. [数据监控](#docs/data_watch)
