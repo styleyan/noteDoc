@@ -72,7 +72,7 @@
 ##后端框架笔记
 1. [Express.Js](#docs/express/lib_Express_des)
     1. [ejs模板](#docs/express/lib_Express_ejs)
-    2. [post/get请求](#docs/express/lib_Express_post)
+    2. [响应ajax请求](#docs/express/lib_Express_post)
 
 ##性能优化
 1. [性能优化文章](#docs/optimal)
