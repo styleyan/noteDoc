@@ -1,5 +1,8 @@
 # express 安装
 
+## 学习参考笔记
+[segmentfault](https://segmentfault.com/a/1190000002812451)
+
 ## 安装需要环境
 ```javascript
 //node版本需要大于等于v6.6.0

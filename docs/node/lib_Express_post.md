@@ -18,6 +18,9 @@ router.post('/myApp', function(req, res, next) {
 		result = {"fff": "ddd"}
 	};
 
+	//获取cookie
+	console.log(req.cookies);
+
 	//设置响应头
 	res.set( {
 	    'Cache-Control' : 'public, max-age=60' ,
