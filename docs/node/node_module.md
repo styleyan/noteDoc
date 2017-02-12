@@ -68,3 +68,13 @@ notifier.notify({
   'message': 'Hello, there!'
 });
 ```
+
+
+<br>
+7)、`npm-user-downloads 查看 npm 用户某个时间段内所有模块的下载量，按从高到低排名`
+```javascript
+npm i npm-user-downloads -g
+
+//查看 hupengbest 用户最后一个月，最近20条数据。
+nud hupengbest last-month --limit=20
+```
