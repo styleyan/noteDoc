@@ -58,7 +58,10 @@
  vue init webpack my-project
  cd my-project
  npm install
+ //启动开发模式
  npm run dev
+ //打包
+ npm run build
 ```
-浏览地址：http://localhost:8080
+浏览地址：http://localhost:8080<br>
 备注：`当启动出现报错，检查8080端口是否被占用。`
