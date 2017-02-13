@@ -52,15 +52,16 @@
 
 
 ## vue-cli构架项目
-与express（express-generator -g）类似方便用户初始化项目骨架，官网地址： [vue-cli][]<br>
+与express-generator类似方便用户初始化项目骨架<br>官网地址： [vue-cli][]<br>
 ```javascript
  npm install -g vue-cli
+ //基于webpack编译构建项目
  vue init webpack my-project
  cd my-project
  npm install
  //启动开发模式
  npm run dev
- //打包
+ //打包发布命令
  npm run build
 ```
 浏览地址：http://localhost:8080<br>

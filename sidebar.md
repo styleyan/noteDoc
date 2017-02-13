@@ -61,13 +61,11 @@
 	1. [slot分发](#docs/vueJs/lib_vueJs_slot)
 1. [react.Js](#docs/lib_reactJs)
 1. [socket.IO](#docs/lib_socket_IO)
-1. [swfobject](#docs/lib_swfobject)
 1. [Rx.JS](#docs/lib_RxJS)
 1. [Video.JS](#docs/lib_VideoJS)
 1. [flv.Js](#docs/lib_flvJs)
 1. [weex.js](#docs/lib_weex)
 1. [Velocity.Js](#docs/lib_velocity)
-1. [hilo.Js](#docs/lib_hilo)
 1. [rax.Js](#docs/lib_rax)
 
 ##nodeJs
