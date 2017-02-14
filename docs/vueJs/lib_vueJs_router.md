@@ -48,6 +48,45 @@ var routes = [
 ```
 
 
+## 动态路由
+```javascript
+<div id="apps">
+  <ul>
+    <li><router-link to="/a/b/e">go to aaa</router-link></li>
+    <li><router-link to="/a/b">go to bbb</router-link></li>
+  </ul>
+  <router-view></router-view>
+</div>
+```
+```javascript
+var List = { template: '<div>list{{$route}}</div>'};
+var test = { template: '<div>test{{$route}}</div>'};
+
+var routes = [{
+  path: '/:aa/:bb/e',
+  component: List
+},{
+  path: '/:a/:b',
+  component: test
+}];
+
+var router = new VueRouter({routes});
+
+new Vue({
+  el: '#apps',
+  router
+});
+```
+你可以在一个路由中设置多段『路径参数』，对应的值都会设置到 $route.params 中。例如：
+
+| 模拟    | 匹配路径 | $route.params |
+| ----- |--------- | --------------|
+| /:aa/:bb | /a/b | { bb: 'b',aa:'a' } |
+| /a/:bb/ | /a/b | { bb: 'b'} |
+
+除了 $route.params 外，$route 对象还提供了其它有用的信息，例如，$route.query（如果 URL 中有查询参数）、$route.hash 等等。
+
+
 ## 嵌套路由
 ```javascript
 const routes = [
@@ -69,3 +108,12 @@ const routes = [
 ]
 ```
 通过懒加载就不会一次性把所有组件都加载进来，而是当你访问到那个组件的时候才会加载那一个。对于组件比较多的应用会提高首次加载速度。
+
+
+
+
+| 项目        | 价格    |  数量   |
+| ----        | ------  | ------  |
+| 计算机      | $1600   |   5     |
+| 手机        |   $12   |   12    |
+| 管线        |    $1   |  234    |

@@ -78,3 +78,13 @@ npm i npm-user-downloads -g
 //查看 hupengbest 用户最后一个月，最近20条数据。
 nud hupengbest last-month --limit=20
 ```
+
+8)、`opn 自动打开浏览器`
+```javascript
+npm install opn
+
+var opn = require('opn');
+var uri = 'http://localhost:' + port;
+console.log('Listening at：' + uri + '\n');
+opn(uri); 	
+```

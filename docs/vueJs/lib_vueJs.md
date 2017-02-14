@@ -13,6 +13,7 @@
 [vue官网讲解]: https://github.com/bhnddowinf/vuejs2-learn
 [vue.js资源汇总]: http://blog.csdn.net/qianhong_/article/details/52522645
 [vue资源]: https://github.com/vuejs/awesome-vue
+[Vue2基础API系列文章合集(推荐)]: https://zhuanlan.zhihu.com/p/25017640?utm_source=wechat_timeline&utm_medium=social&from=timeline&isappinstalled=1
 
 
 [nuxt]: https://github.com/nuxt/nuxt.js
@@ -29,6 +30,7 @@
 - [vue官网讲解][]
 - [vue.js资源汇总][]
 - [vue资源][]
+- [Vue2基础API系列文章合集(推荐)][]
 
 
 ## vue Ui组件
