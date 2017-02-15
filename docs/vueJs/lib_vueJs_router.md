@@ -2,9 +2,111 @@
 
 [官方文档](https://router.vuejs.org/zh-cn/)<br>
 [github地址](https://github.com/vuejs/vue-router/tree/next)<br><br>
-用 Vue.js + vue-router 创建单页应用，是非常简单的。使用 Vue.js 时，我们就已经把组件组合成一个应用了，当你要把 vue-router 加进来，只需要配置组件和路由映射，然后告诉 vue-router 在哪里渲染它们。下面是个基本例子：
+
+## 路由解析
+```javascript
+new VueRouter({
+  mode:'history',
+  base: __dirname,
+  routes: [
+    {
+      //通过 'to="/"'，跳转指定路由
+      path: '/',
+      //通过 ':to={name:"foo"}'，跳转指定路由
+      name: 'foo',
+      //重定向,通过name重定向  redirect{name:'foo'}
+      redirect:'/foo',
+      //设置别名，也可以是个数组 ['/baz', 'baz-alias']
+      alias: 'nested-alias',
+      // ???    也可以写成：props: { name: 'world' }
+      props:true,
+      // ???
+      meta: { scrollToTop: true },
+      // ???
+      scrollBehavior: function(to, from, savedPosition){},
+      //组件文件
+      component: {
+        //单个用template
+        //多个：https://github.com/vuejs/vue-router/blob/dev/examples/named-views/app.js
+        template: '<div><h2>Home</h2></div>'
+      },
+      children: [
+        //传的参数与父级一样形式
+      ],
+      /*
+      * 模板渲染前调用
+      * @param to  【】   
+      * @param from【】   
+      * @param next【】   
+      */
+      beforeEnter:function(to,from,next){
+        //一些代码
+      },
+      /*
+      * 理由渲染之前调用
+      * @param to  【】   
+      * @param from【】   
+      * @param next【】   
+      */
+      beforeRouteLeave: function(to,from,next){
+        //一些代码
+      },
+      /*
+      * 理由渲染之前调用
+      * @param to  【】   
+      * @param from【】   
+      * @param next【】   
+      */
+      beforeRouteEnter: function(to,from,next){
+
+      },
+      /*
+      * 理由渲染之前调用
+      * @param to  【】   
+      * @param from【】   
+      * @param next【】   
+      */
+      beforeRouteUpdate: function(to,from,next){
+
+      }
+
+    },
+    //其他路由配置
+    ....
+  ]
+})
+```
+
+`router-link`
+```javascript
+//配合path, 跳转到path指定的路由
+<router-link to="/">/</router-link>
+//配合name, 跳转到name指定的路由
+<router-link :to="{ name: 'foo' }">foo</router-link>
+
+
+//tag
+<router-link to="/">/</router-link>
+
+```
+
+
+`router-view`
+```javascript
+//默认显示一个
+<router-view class="view one"></router-view>
+
+//通过name可以同时设置多个组件显示
+// https://github.com/vuejs/vue-router/blob/dev/examples/named-views/app.js
+<router-view class="view one" name="a"></router-view>
+
+//可以带有默认值
+<router-link>/qudddux</router-link>
+```
+
 
 ## 使用路由
+用 Vue.js + vue-router 创建单页应用，是非常简单的。使用 Vue.js 时，我们就已经把组件组合成一个应用了，当你要把 vue-router 加进来，只需要配置组件和路由映射，然后告诉 vue-router 在哪里渲染它们。下面是个基本例子：
 ```html
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
