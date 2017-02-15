@@ -2,10 +2,12 @@
 
 [官方文档](https://router.vuejs.org/zh-cn/)<br>
 [github地址](https://github.com/vuejs/vue-router/tree/next)<br><br>
+[vue-router 2.0 改变的内容(推荐)](https://segmentfault.com/a/1190000006623100)<br>
 
 ## 路由解析
 ```javascript
 new VueRouter({
+  //url显示模式, 默认是 "hash",其他值2个('abstract'、'history')
   mode:'history',
   base: __dirname,
   routes: [
@@ -22,19 +24,58 @@ new VueRouter({
       props:true,
       // ???
       meta: { scrollToTop: true },
-      // ???
+      // 滚动行为
       scrollBehavior: function(to, from, savedPosition){},
       //组件文件
       component: {
         //单个用template
         //多个：https://github.com/vuejs/vue-router/blob/dev/examples/named-views/app.js
-        template: '<div><h2>Home</h2></div>'
+        template: '<div><h2>Home</h2></div>',
+        /*
+        * 组件隐藏后调用
+        * @param to  【Object】   
+        * @param from【Object】   
+        * @param next【Function】   
+        */
+        beforeRouteLeave: function(to,from,next){
+
+          // next(true):显示视图，
+          // next('/index')：跳转到指定路径;
+          // 第三种暂时不知干嘛的
+          next(true);
+        },
+        /*
+        * 组件显示之前调用
+        * @param to  【Object】   
+        * @param from【object】   
+        * @param next【Function】   
+        */
+        beforeRouteEnter: function(to,from,next){
+
+          // next(true):显示视图，
+          // next('/index')：跳转到指定路径;
+          // 第三种暂时不知干嘛的
+          next(true);
+        },
+        /*
+        * 组件更新前调用
+        * @param to  【Object】   
+        * @param from【object】   
+        * @param next【Function】   
+        */
+        beforeRouteUpdate: function(to,from,next){
+          
+          // next(true):显示视图，
+          // next('/index')：跳转到指定路径;
+          // 第三种暂时不知干嘛的
+          next(true);
+        }
       },
       children: [
         //传的参数与父级一样形式
       ],
       /*
-      * 模板渲染前调用
+      * 路由显示前调用，比beforeRouteEnter先执行。
       * @param to  【】   
       * @param from【】   
       * @param next【】   
@@ -42,39 +83,12 @@ new VueRouter({
       beforeEnter:function(to,from,next){
         //一些代码
       },
-      /*
-      * 理由渲染之前调用
-      * @param to  【】   
-      * @param from【】   
-      * @param next【】   
-      */
-      beforeRouteLeave: function(to,from,next){
-        //一些代码
-      },
-      /*
-      * 理由渲染之前调用
-      * @param to  【】   
-      * @param from【】   
-      * @param next【】   
-      */
-      beforeRouteEnter: function(to,from,next){
-
-      },
-      /*
-      * 理由渲染之前调用
-      * @param to  【】   
-      * @param from【】   
-      * @param next【】   
-      */
-      beforeRouteUpdate: function(to,from,next){
-
-      }
-
     },
     //其他路由配置
     ....
   ]
-})
+});
+
 ```
 
 `router-link`
@@ -104,6 +118,21 @@ new VueRouter({
 <router-link>/qudddux</router-link>
 ```
 
+## 监听路由变化
+```javascript
+var app = new Vue({
+  el: '#app',
+  //路由对象
+  router,
+  //监听路由
+  watch: {
+    //监听路由改变
+    '$router': function(to,from){
+        //一些代码
+    }
+  }
+})
+```
 
 ## 使用路由
 用 Vue.js + vue-router 创建单页应用，是非常简单的。使用 Vue.js 时，我们就已经把组件组合成一个应用了，当你要把 vue-router 加进来，只需要配置组件和路由映射，然后告诉 vue-router 在哪里渲染它们。下面是个基本例子：
