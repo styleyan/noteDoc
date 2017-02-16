@@ -23,6 +23,7 @@
 [vue-cli]: https://github.com/vuejs/vue-cli
 [vue-devtools]: https://github.com/vuejs/vue-devtools
 [vue-loader]: https://github.com/vuejs/vue-loader
+[官方推荐的ajax模块]: https://github.com/mzabriskie/axios
 
 ## 学习相关网站
 - [vueClick事件][]
@@ -51,6 +52,7 @@
 -  [vue-vuex][]
 -  [vue-router][]
 -  [vue-devtools][]
+-  [官方推荐的ajax模块][]
 
 
 ## vue-cli构架项目
