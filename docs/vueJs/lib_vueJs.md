@@ -12,7 +12,6 @@
 [vue编译事例]: https://github.com/yangjunjun/vue-pack-demo
 [vue官网讲解]: https://github.com/bhnddowinf/vuejs2-learn
 [vue.js资源汇总]: http://blog.csdn.net/qianhong_/article/details/52522645
-[vue资源]: https://github.com/vuejs/awesome-vue
 [Vue2基础API系列文章合集(推荐)]: https://zhuanlan.zhihu.com/p/25017640?utm_source=wechat_timeline&utm_medium=social&from=timeline&isappinstalled=1
 
 
@@ -30,8 +29,11 @@
 - [vue编译事例][]
 - [vue官网讲解][]
 - [vue.js资源汇总][]
-- [vue资源][]
 - [Vue2基础API系列文章合集(推荐)][]
+- [Vue.js资源分享(推荐)](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md)
+
+## 实际例子
+- [vue.js实例项目](https://www.zhihu.com/question/37984203)
 
 
 ## vue Ui组件
@@ -41,7 +43,9 @@
 - [VueStrap][]		
 - [vonic][]		
 - [semantic][]		
-- [rubik][]		
+- [rubik][]	
+- [vue-weui](http://aidenzou.github.io/vue-weui/#!/)
+- [其它组件](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md#2-其它组件)	
 
 
 ## vue插件

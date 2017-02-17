@@ -66,7 +66,9 @@ var vm = new Vue({
     //注册局部组件
     components:{"my-component":cmp},
     //???
-    mounted:function(){}
+    mounted:function(){},
+    //把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件
+    store:store
 });
 
 ```

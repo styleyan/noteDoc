@@ -1,6 +1,9 @@
 # 函数扩张
 
-### 匿名函数
+## 推荐文章
+[箭头函数介绍](http://www.jianshu.com/p/4b101a763e85)
+
+### 简单示例
 ```javascript
 function abs (num,callback){
   for(var i = 0; i< num; i++){
