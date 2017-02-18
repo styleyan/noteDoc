@@ -19,7 +19,7 @@
 [vue-resource]: https://github.com/vuejs/vue-resource
 [vue-vuex]: https://vuex.vuejs.org/zh-cn/
 [vue-router]: https://router.vuejs.org/zh-cn/
-[vue-cli]: https://github.com/vuejs/vue-cli
+
 [vue-devtools]: https://github.com/vuejs/vue-devtools
 [vue-loader]: https://github.com/vuejs/vue-loader
 [官方推荐的ajax模块]: https://github.com/mzabriskie/axios
@@ -31,9 +31,6 @@
 - [vue.js资源汇总][]
 - [Vue2基础API系列文章合集(推荐)][]
 - [Vue.js资源分享(推荐)](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md)
-
-## 实际例子
-- [vue.js实例项目](https://www.zhihu.com/question/37984203)
 
 
 ## vue Ui组件
@@ -59,18 +56,3 @@
 -  [官方推荐的ajax模块][]
 
 
-## vue-cli构架项目
-与express-generator类似方便用户初始化项目骨架<br>官网地址： [vue-cli][]<br>
-```javascript
- npm install -g vue-cli
- //基于webpack编译构建项目
- vue init webpack my-project
- cd my-project
- npm install
- //启动开发模式
- npm run dev
- //打包发布命令
- npm run build
-```
-浏览地址：http://localhost:8080<br>
-备注：`当启动出现报错，检查8080端口是否被占用。`

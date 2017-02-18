@@ -43,7 +43,7 @@
 	1. [tweenJs api笔记](#docs/lib_createJS_tweenJs)
 	1. [soundJs api笔记](#docs/lib_createJS_soundJs)
 	1. [PreloadJS api笔记](#docs/lib_createJS_preloadJs)
-1. [vue.Js](#docs/vueJs/lib_vueJs)
+1. [vue](#docs/vueJs/lib_vueJs)
 	1. [基础知识](#docs/vueJs/lib_vueJs_base)
 	1. [prop简介](#docs/vueJs/lib_vueJs_props)
 	1. [directive自定义指令](#docs/vueJs/lib_vueJs_directive)

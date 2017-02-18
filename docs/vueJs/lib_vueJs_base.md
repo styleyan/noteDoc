@@ -38,14 +38,14 @@ var vm = new Vue({
     filters:{
       capitalize:function(){}
     },
-    //暂定???
+    //模板
     template:'<div>{{msg}}</div>',
-    //暂定???
-    mounted:function(){},
     /*在实例创建之后同步调用。此时实例已经结束解析选项，这意味着已建立：
     数据绑定，计算属性，方法，watcher/事件回调。但是还没有开始 
     DOM编译，$el 还不存在。*/
     created:function(){},
+    //实例挂载到dom后回调函数,比created后调用
+    mounted:function(){},
     //模块编译之前
     beforeCompile: function(){},
     //模块编译之后；即模板占位符被是内容替换
@@ -59,15 +59,13 @@ var vm = new Vue({
     beforeDestroy: function(){},
     //对象销毁之后
     destroyed: function(){},
-    //暂定??? 混合
+    //混合
     mixins:[XXXX],
     //注册局部指令
     directives:{},
     //注册局部组件
     components:{"my-component":cmp},
-    //???
-    mounted:function(){},
-    //把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件
+    //vuex 实例化对象,把store的实例注入所有的子组件
     store:store
 });
 

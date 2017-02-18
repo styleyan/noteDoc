@@ -11,11 +11,11 @@
 ## new Vuex.Store接受参数
 ```javascript
 const store = new Vuex.Store({
-	//放置状态
+	//数据源
 	state: {
 
 	},
-	//mutations 用于保存状态改变的所有方法
+	//数据操作
 	mutations: {
 
 	},
@@ -36,18 +36,32 @@ const store = new Vuex.Store({
 1. `不要在发布环境下启用严格模式！`严格模式会深度监测状态树来检测不合规的状态变更<br>
 
 
-## new Vuex.Store() 返回值;
+## new Vuex.Store() 实例 api
+前往》[Vuex.Store 实例方法](https://vuex.vuejs.org/zh-cn/api.html)
 ```javascript
 const store = new Vuex.Store({.../参数});
 
-//???
-store.commit(type, payload, options);
-//???
-store.dispatch(type, payload)
+//提交 mutation
+store.commit(mutation, payload);
+store.commit({type:'mutation',xxx:xxx});
+//分发 action。返回 action 方法的返回值，如果多个处理函数被触发，那么返回一个 Pormise。
+dispatch(type: string, payload?: any) | dispatch(action: Object)
 //???
 store.getters
 //查看是否开启严格模式
 store.strict
+
+//动态 Modules 注册
+store.registerModule('xxxxx',{})
+
+//???
+store.replaceState
+
+//???
+store.unregisterModule
+
+// ???
+store.watch
 ```
 
 
