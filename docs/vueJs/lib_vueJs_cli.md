@@ -20,14 +20,8 @@
 浏览地址：http://localhost:8080<br>
 备注：`当启动出现报错，检查8080端口是否被占用。`
 
-## 入门例子地址
-- [vue-demo-kugou](https://github.com/lavyun/vue-demo-kugou)
-- [从零构建vue2 + vue-router + vuex 开发环境到入门](https://github.com/lzxb/vue2-demo)
-- [用Vue.js开发微信app界面](https://github.com/useryangtao/vue-wechat)
-- [vue.js实例项目](https://www.zhihu.com/question/37984203)
-- [高仿饿了么](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
 
-## 简单示例
+## 引入组件
 1.新建 aaa.vue文件，并写<br>
 ```javascript
 <template>
@@ -79,4 +73,48 @@
 
 	//... 一些代码
 </script>
+```
+
+## export/import 几种方式
+
+#### default对外接口
+```javascript
+//a组件 
+export default{
+	aaaa:function(){},
+	bbbb:'sss'
+}
+
+//其他组件使用a组件
+import obj from "./a";
+obj  //得到 => {aaaa:function(){},bbbb:'ssss'}
+```
+
+#### 多个外面接口只取其中一个
+```javascript
+//a组件
+export const YXF_AAAA = "YXF_AAAA";
+export const YXF_YOUNAME = "YXF_YOUNAME";
+export const WN_WIFE = "WN_WIFE";
+export const YXF_WN_FN = ()=>{console.log('dddd')};
+
+
+//其他组件使用a组件
+import {YXF_WN_FN} from "./a";
+YXF_WN_FN  //得到 => function(){console.log('dddd')}
+```
+
+#### 获取全部对外接口
+```javascript
+//a组件
+export const YXF_AAAA = "AAAA";
+export const YXF_YOUNAME = "YOUNAME";
+export const WN_WIFE = "WN_WIFE";
+export const YXF_WN_FN = ()=>{console.log('dddd')};
+
+
+//其他组件使用a组件
+import * as MYCONFIG from './a';
+
+MYCONFIG //得到a组建所有接口 => {"YXF_AAAA":"AAAA","YXF_YOUNAME":"YOUNAME",....}
 ```

@@ -49,10 +49,17 @@
 -  [vue-resource][]	  
 -  [nuxt][]	  
 -  [vue-loader][]
--  [vue-cli][]
 -  [vue-vuex][]
 -  [vue-router][]
 -  [vue-devtools][]
 -  [官方推荐的ajax模块][]
+
+
+## 入门例子地址
+- [vue-demo-kugou](https://github.com/lavyun/vue-demo-kugou)
+- [从零构建vue2 + vue-router + vuex 开发环境到入门](https://github.com/lzxb/vue2-demo)
+- [用Vue.js开发微信app界面](https://github.com/useryangtao/vue-wechat)
+- [vue.js实例项目](https://www.zhihu.com/question/37984203)
+- [高仿饿了么](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
 
 
