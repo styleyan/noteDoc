@@ -58,7 +58,7 @@ const app = new Vue({
 
 ## Modules
 
-使用Modules合并后,调用不同 mutations 对应所在Modules里的state值
+#### 使用Modules合并后,调用不同 mutations 对应所在Modules里的state值
 ```javascript
 const moduleA = {
   state: {
@@ -93,7 +93,7 @@ store2.commit('aaa');  //得到==> 4
 store2.commit('bbb');  //得到==> 88
 ```
 
-如果2个modules中的mutations相同,那么同时出发
+#### 2个modules中的mutations相同,那么同时出发
 ```javascript
 const moduleA = {
   state: {
@@ -128,6 +128,57 @@ const store2 = new Vuex.Store({
 
 store2.commit('aaa');  // 得到==> 4 , 888
 ```
+
+#### 多个modules有相同的getters
+```javascript
+const modA = {
+  state: {
+    count: 0
+  },
+  getters: {
+    //与 modB中的 getters相同
+    getcount: function(state){
+      return state.count;
+    }
+  },
+  mutations: {
+    ccc:function(state){
+      console.log(state.count++)
+    }
+  }
+};
+
+const modB = {
+  state: {
+    count: 5
+  },
+  getters: {
+    //与 modA中的 getters相同
+    getcount: function(state){
+      return state.count;
+    }
+  },
+  mutations: {
+    ccc:function(state){
+      console.log(state.count++)
+    }
+  }
+};
+
+const store = new Vuex.Store({
+  mutations: {
+    ccc: function(state){
+        console.log(state.abc + new Date()/1000 + 'sss');
+    }
+  },
+  modules: {
+    a: modA,
+    b: modB
+  }
+});
+
+```
+上面这样定义会出错，`原因在于模块内部的 action、mutation、和 getter ,仍然注册在全局命名空间`
 
 
 ## Getters
