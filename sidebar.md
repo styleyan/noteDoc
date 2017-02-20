@@ -61,7 +61,7 @@
 	1. [slot插槽](#docs/vueJs/lib_vueJs_slot)
 	1. [axios Ajax模块](#docs/vueJs/lib_vueJs_axios)
 1. [vue-cli](#docs/vueCli/lib_vuecli_cli)
-	1. [安装](#docs/vueCli/lib_vuecli_install)
+	1. [安装](#docs/vueCli/lib_vuecli_install)  
 	1. [组价引用](#docs/vueCli/lib_vuecli_components)
 	1. [模拟数据](#docs/vueCli/lib_vuecli_mock)
 1. [vuex](#docs/vuex/vuex_info)
