@@ -7,7 +7,8 @@
 
 ## 实际例子
 [V2EX-mobile](https://github.com/Vincent1993/V2EX-mobile)<br>
-[官方例子](https://github.com/vuejs/vue-hackernews-2.0)
+[官方例子](https://github.com/vuejs/vue-hackernews-2.0)<br>
+[前端实现登录拦截](https://github.com/superman66/vue-axios-github)
 
 
 ## new Vuex.Store接受参数
