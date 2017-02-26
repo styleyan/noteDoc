@@ -3,7 +3,6 @@
 ## 学习参考笔记
 - [segmentfault](https://segmentfault.com/a/1190000002812451)
 - [构建 Express Api 五个有用的中间件](https://fe.ele.me/gou-jian-express-api-wu-ge-you-yong-de-zhong-jian-jian/)
-- [express4.X框架中使用socket.io](http://blog.csdn.net/zzwwjjdj1/article/details/52149438)
 
 ## 安装需要环境
 ```javascript

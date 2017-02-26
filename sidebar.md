@@ -81,6 +81,7 @@
     1. [ejs模板](#docs/node/lib_Express_ejs)
     2. [响应ajax请求](#docs/node/lib_Express_post)
     2. [添加socket.io](#docs/node/lib_Express_socketio)
+    2. [express 允许跨域](#docs/node/lib_Express_cors)
 2. [node实用模块](#docs/node/node_module)
 
 ##性能优化
