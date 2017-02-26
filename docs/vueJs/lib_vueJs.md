@@ -61,5 +61,6 @@
 - [用Vue.js开发微信app界面](https://github.com/useryangtao/vue-wechat)
 - [vue.js实例项目](https://www.zhihu.com/question/37984203)
 - [高仿饿了么](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
+- [高仿网易云音乐](https://github.com/javaSwing/NeteaseCloudWebApp)
 
 
