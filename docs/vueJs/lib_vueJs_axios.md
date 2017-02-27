@@ -81,3 +81,12 @@ methods: {
 }
 ```
 postAjax是绑定在组件上的一个方法，将触发casingAjax,从而通过axios向服务器发送请求。
+
+
+## 配置说明
+```javascript
+//设置默认请求超出时间
+axios.default.timeout = 50000;
+//设置默认请求路径
+axios.default.baseURL = "https://api.github.com"
+```
