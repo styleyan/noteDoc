@@ -90,3 +90,43 @@ axios.default.timeout = 50000;
 //设置默认请求路径
 axios.default.baseURL = "https://api.github.com"
 ```
+
+`http request 拦截器`
+```javascript
+axios.interceptors.request.use(
+    config => {
+        if (store.state.token) {
+            config.headers.Authorization = `token ${store.state.token}`;
+        }
+        return config;
+    },
+    err => {
+        return Promise.reject(err);
+    }
+);
+```
+
+`http response 拦截器`
+```javascript
+axios.interceptors.response.use(
+    response => {
+        return response;
+    },
+    error => {
+        if (error.response) {
+            switch (error.response.status) {
+                case 401:
+                    // 401 清除token信息并跳转到登录页面
+                    store.commit(types.LOGOUT);
+                    router.replace({
+                        path: 'login',
+                        query: {redirect: router.currentRoute.fullPath}
+                    })
+            }
+        }
+        // console.log(JSON.stringify(error));//console : Error: Request failed with status code 402
+        return Promise.reject(error.response.data)
+    }
+);
+```
+[考察链接地址](https://github.com/superman66/vue-axios-github/blob/master/src/http.js);
