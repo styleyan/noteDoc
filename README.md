@@ -6,3 +6,4 @@
 ### 导航收藏
 - [ 猫的前端回忆录(推荐) ](https://github.com/windiest/Front-end-tutorial)
 - [ECMAScript 6 入门(阮一峰)](http://es6.ruanyifeng.com/)
+- [基于 vue2 + vuex2 构建一个具有 50 多个页面的大型单页面应用](https://github.com/bailicangdu/vue2-elm)
