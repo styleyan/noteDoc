@@ -1,6 +1,6 @@
 # DAY DAY UP
 
-`github:` [styleyan](https://github.com/styleyan)<br><br>
+`follow my github:` 【[https://github.com/styleyan](https://github.com/styleyan)】<br><br>
 
 
 不积跬步，无以至千里；不积小流，无以成江海。

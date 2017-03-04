@@ -3,12 +3,6 @@
 作者：[_dddd](http://www.isyxf.com)
 <!-- [ditto:searchbar] -->
 ##前端框架笔记
-1. [create.Js](#docs/createJs/lib_createJS_info)
-	1. [实例属性/方法备注](#docs/createJs/lib_createJS_newDeatail)
-	1. [easelJs api笔记](#docs/lib_createJS_easelJs)
-	1. [tweenJs api笔记](#docs/lib_createJS_tweenJs)
-	1. [soundJs api笔记](#docs/lib_createJS_soundJs)
-	1. [PreloadJS api笔记](#docs/lib_createJS_preloadJs)
 1. [vue](#docs/vueJs/lib_vueJs)
 	1. [基础知识](#docs/vueJs/lib_vueJs_base)
 	1. [prop简介](#docs/vueJs/lib_vueJs_props)
