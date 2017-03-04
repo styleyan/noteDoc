@@ -1,5 +1,8 @@
 # DAY DAY UP
 
+`github:` [styleyan](https://github.com/styleyan)<br><br>
+
+
 不积跬步，无以至千里；不积小流，无以成江海。
 [![cover](images/cover_thumbnail.jpg)](images/cover_thumbnail.jpg)
 
