@@ -3,6 +3,8 @@
 ## 学习参考笔记
 - [segmentfault](https://segmentfault.com/a/1190000002812451)
 - [构建 Express Api 五个有用的中间件](https://fe.ele.me/gou-jian-express-api-wu-ge-you-yong-de-zhong-jian-jian/)
+- [使用 Express + MongoDB 搭建多人博客(强烈推荐)](https://github.com/nswbmw/N-blog)
+
 
 ## 安装需要环境
 ```javascript
