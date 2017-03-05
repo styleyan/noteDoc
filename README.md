@@ -21,6 +21,7 @@
 - [使用 Express + MongoDB 搭建多人博客](https://maninboat.gitbooks.io/n-blog/content/)
 - [npm 介绍](https://docs.npmjs.com/files/package.json%E3%80%82)
 - [ajax学习体系](http://louiszhai.github.io/2016/11/02/ajax/)
+- [](https://github.com/youngwind/blog)
 
 ## 前端导航栏
 - [36镇](http://www.36zhen.com/t?id=2549)
