@@ -1,6 +1,7 @@
 # axios 发送ajax请求
 
-[axios中文说明文档](http://www.kancloud.cn/yunye/axios/234845)
+[axios中文说明文档](http://www.kancloud.cn/yunye/axios/234845)<br>
+[ajax学习体系( 推荐 )](http://louiszhai.github.io/2016/11/02/ajax/)<br><br>
 
 使用npm 安装 axios
 ```javascript
