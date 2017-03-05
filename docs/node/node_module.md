@@ -128,4 +128,15 @@ $('button').click(function(){
 })
 ```
 
+10)、`cross-env 解决跨平台设置NODE_ENV的问题`
+```javascript
+npm install --save-dev cross-env
+```
+
+
+11)、`winston  日志管理模块`
+```javascript
+npm install --svae-dev winston
+```
+
 
