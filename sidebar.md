@@ -52,9 +52,6 @@
 ## 前端监控
 1. [数据监控](#docs/data_watch)
 
-## 工作总结
-1. [跨域问题](#docs/work/cross_domain)
-
 ##ES6笔记
 
 1. [字符串的扩展](#docs/es6/es6_string)
