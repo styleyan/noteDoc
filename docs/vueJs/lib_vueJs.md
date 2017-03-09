@@ -6,6 +6,7 @@
 - [vue.js资源汇总](http://blog.csdn.net/qianhong_/article/details/52522645)
 - [Vue2基础API系列文章合集(推荐)](https://zhuanlan.zhihu.com/p/25017640?utm_source=wechat_timeline&utm_medium=social&from=timeline&isappinstalled=1)
 - [Vue.js资源分享(推荐)](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md)
+- [Vue相关开源项目库汇总(特别推荐)](https://github.com/opendigg/awesome-github-vue)
 
 
 ## vue Ui组件
