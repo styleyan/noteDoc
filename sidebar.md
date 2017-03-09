@@ -40,7 +40,7 @@
 
 ##nodeJs
 1. [Express.js](#docs/node/lib_Express_des)
-    1. [ejs模板](#docs/node/lib_Express_ejs)
+    
     2. [响应ajax请求](#docs/node/lib_Express_post)
     2. [添加socket.io](#docs/node/lib_Express_socketio)
     2. [express 允许跨域](#docs/node/lib_Express_cors)
@@ -51,9 +51,6 @@
 
 ## 前端监控
 1. [数据监控](#docs/data_watch)
-
-## 工作总结
-1. [跨域问题](#docs/work/cross_domain)
 
 ##ES6笔记
 
