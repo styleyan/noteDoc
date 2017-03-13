@@ -71,6 +71,7 @@
 1. [Set、Map、WeakMap](#docs/es6/es6_decorator)
 1. [Module](#docs/es6/es6_module)
 1. [Iterator、for...of](#docs/es6/es6_Iterator_for_of)
+1. [RegExp](#docs/es5/es5_RegExp)
 
 ##HTML5
 1. [WebRTC](#docs/html5_webrtc)

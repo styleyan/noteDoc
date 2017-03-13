@@ -18,6 +18,7 @@
 - [ajax学习体系](http://louiszhai.github.io/2016/11/02/ajax/)
 - [梁少峰的博客（推荐）](https://github.com/youngwind/blog)
 - [justjavac(迷渡)](http://justjavac.com/)
+- [CMAScript5.1中文版](http://yanhaijing.com/es5/#null)
 
 
 ## 前端导航栏
