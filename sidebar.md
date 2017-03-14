@@ -23,7 +23,6 @@
 1. [vue-cli](#docs/vueCli/lib_vuecli_cli)
 	1. [安装](#docs/vueCli/lib_vuecli_install)  
 	1. [组价引用](#docs/vueCli/lib_vuecli_components)
-	1. [模拟数据](#docs/vueCli/lib_vuecli_mock)
 1. [vuex](#docs/vuex/vuex_info)
 	1. [vuex基本用法](#docs/vuex/vuex_info)
 	1. [核心概念](#docs/vuex/vuex_diff)
@@ -37,6 +36,9 @@
 1. [rax.js](#docs/lib_rax)
 1. [jquery.js](#docs/lib_jquery)
 1. [store.js](#docs/lib_store)
+
+## 前端安全
+1. [XSS/CSRF](#docs/security)
 
 ##nodeJs
 1. [Express.js](#docs/node/lib_Express_des)
