@@ -4,6 +4,7 @@
 <!-- [ditto:searchbar] -->
 ##前端框架笔记
 1. [vue](#docs/vueJs/lib_vueJs)
+	1. [vue特别注意的地方](#docs/vueJs/lib_vueJs_note)
 	1. [基础知识](#docs/vueJs/lib_vueJs_base)
 	1. [prop简介](#docs/vueJs/lib_vueJs_props)
 	1. [directive自定义指令](#docs/vueJs/lib_vueJs_directive)
