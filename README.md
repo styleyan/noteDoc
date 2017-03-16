@@ -4,7 +4,7 @@
 
 
 不积跬步，无以至千里；不积小流，无以成江海。
-[![cover](images/cover_thumbnail.jpg)](images/cover_thumbnail.jpg)
+[![cover](http://omwzduhx0.bkt.clouddn.com/cover_thumbnail.jpg)](http://omwzduhx0.bkt.clouddn.com/cover_thumbnail.jpg)
 
 ## 学习博客
 - [myron](http://www.myronliu.com/)
