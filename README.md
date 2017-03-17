@@ -29,7 +29,15 @@
 - [猫的前端回忆录(推荐)](https://github.com/windiest/Front-end-tutorial)
 - [GitHub 上有哪些值得推荐的开源电子书](https://www.zhihu.com/question/38836382/answer/79794319?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 - [前端资源系列](https://segmentfault.com/a/1190000007062464)
+- [css88](http://www.css88.com/)
 
 
 ## 前端论坛
 - [segmentfault](https://segmentfault.com/)
+
+
+## css工具
+- [easings缓动函数](http://easings.net/zh-cn)
+- [动画轨道](http://jeremyckahn.github.io/stylie/)
+- [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
+- [背景图标坐标位置获取](http://www.spritecow.com/)

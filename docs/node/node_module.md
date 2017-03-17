@@ -139,7 +139,7 @@ npm install --save-dev cross-env
 npm install --svae-dev winston
 ```
 
-12)、'sinopia 本地搭建npm仓库'
+12)、`sinopia 本地搭建npm仓库`
 ```javascript
 npm install -g sinopia
 
