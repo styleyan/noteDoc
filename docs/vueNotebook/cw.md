@@ -38,7 +38,7 @@ var app = new Vue({
 })
 ```
 
-## computed死循调用
+## computed出现死循调用情况
 ```javascript
 var app = new Vue({
 	el: '#app',

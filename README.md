@@ -30,6 +30,7 @@
 - [GitHub 上有哪些值得推荐的开源电子书](https://www.zhihu.com/question/38836382/answer/79794319?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 - [前端资源系列](https://segmentfault.com/a/1190000007062464)
 - [css88](http://www.css88.com/)
+- [十大经典排序算法(带动图演示)](https://sort.hust.cc/1.bubbleSort.html)
 
 
 ## 前端论坛
