@@ -139,4 +139,21 @@ npm install --save-dev cross-env
 npm install --svae-dev winston
 ```
 
+12)、'sinopia 本地搭建npm仓库'
+```javascript
+npm install -g sinopia
+
+//设置localhost端口
+npm set registry http://localhost:4873
+
+//启动
+sinopia
+
+//使用nrm切换
+nrm use localhost
+
+//下载模块
+npm install xxxx
+```
+
 
