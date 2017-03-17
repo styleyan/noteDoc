@@ -57,8 +57,10 @@
 描述：Vue实例销毁后调用，调用后Vue实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。
 
 
-[![生命周期流程图](docs/images/lifecycle.png)](docs/images/lifecycle.png)
+[![生命周期流程图](http://omwzduhx0.bkt.clouddn.com/lifecycle.png)](http://omwzduhx0.bkt.clouddn.com/lifecycle.png)
 
+## 生命周期图介绍
+[![生命周期流程图](http://omwzduhx0.bkt.clouddn.com/aaaa.png)](http://omwzduhx0.bkt.clouddn.com/aaaa.png)
 
 ## 推荐博客
 > * [Vue.js 生命周期和route的生命周期讲解](http://www.jianshu.com/p/e9f884b6ba6c)
