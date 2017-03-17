@@ -57,7 +57,8 @@
 
 
 ## 前端工具
-1. [gulp](#docs/gulp/gulp_info)
+1. [gulp](#docs/tool/gulp_info)
+1. [webpack](#docs/tool/webpack)
 
 
 ##ES6笔记
