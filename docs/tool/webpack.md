@@ -1,6 +1,10 @@
 # webpack配置
 
 - [webpack2.2文档](https://webpack.js.org/concepts/)
+- [webpack2.2中文版文档](https://doc.webpack-china.org/)
+- [webpack2新特性](https://github.com/dwqs/blog/issues/46)
+- [webpack2升级指南](https://segmentfault.com/a/1190000008181955)
+- [webpack与gulp区别](http://www.cnblogs.com/lovesong/p/6413546.html)
 
 ## webpack作用
 1. 一切都是模块化(js,css,图片等)
@@ -84,6 +88,17 @@ webpack-dev-server --hot
 
 //终端使用,相当于 webpack-dev-server
 npm run dev
+```
+
+
+## webpack插件
+```javascript
+//把所有入口节点的公共代码提取生成一个common.js
+new webpack.optimize.CommonsChunkPlugin('common.js')
+
+//有选择的提取,只提取entry1节点和entry2中的共用部分模块, 生成一个common.js
+new webpack.optimize.CommonsChunkPlugin('common.js',['entry1','entry2']);
+
 ```
 
 
