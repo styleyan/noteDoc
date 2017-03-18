@@ -19,6 +19,7 @@
 - [梁少峰的博客（推荐）](https://github.com/youngwind/blog)
 - [justjavac(迷渡)](http://justjavac.com/)
 - [CMAScript5.1中文版](http://yanhaijing.com/es5/#null)
+- [Taobao FED 淘宝前端团队](http://taobaofed.org/)
 
 
 ## 前端导航栏

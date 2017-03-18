@@ -5,4 +5,5 @@
 - [小胡子哥性能专栏](https://github.com/barretlee/performance-column/issues?from=singlemessage&isappinstalled=1)
 - [使用Service worker实现加速](http://mp.weixin.qq.com/s/y8zgMC7BIhdcms7qQG4oEw)
 - [2017前端性能优化清单](https://github.com/Findow-team/Blog/issues/11)
+- [浅析渲染引擎与前端优化](http://jdc.jd.com/archives/2806)
 
