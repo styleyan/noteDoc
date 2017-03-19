@@ -130,4 +130,4 @@ axios.interceptors.response.use(
     }
 );
 ```
-[考察链接地址](https://github.com/superman66/vue-axios-github/blob/master/src/http.js);
+[参考链接地址](https://github.com/superman66/vue-axios-github/blob/master/src/http.js);

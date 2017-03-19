@@ -17,7 +17,6 @@
 	1. [vue--实例事件](#docs/vueJs/lib_vueJs_objEvent)
 	1. [vue--实例生命周期](#docs/vueJs/lib_vueJs_lifeCycle)
 	1. [vue--slot插槽](#docs/vueJs/lib_vueJs_slot)
-	1. [axios Ajax模块](#docs/vueJs/lib_vueJs_axios)
 	1. [vueRoute--路由配置](#docs/vueJs/lib_vueJs_router)
 	1. [vueCli--安装](#docs/vueCli/lib_vuecli_install)
 	1. [vueCli--组价引用](#docs/vueCli/lib_vuecli_components)
@@ -34,9 +33,10 @@
 1. [jquery.js](#docs/lib_jquery)
 1. [store.js](#docs/lib_store)
 
-## vue使用心得
+## vue使用笔记
 1. [computed/watch](#docs/vueNotebook/cw)
 1. [组件之间通信几种方法](#docs/vueNotebook/message)
+1. [axios Ajax请求](#docs/vueNotebook/axios)
 
 
 ## 前端安全
@@ -62,7 +62,8 @@
 
 
 ##ES6笔记
-
+1. [var/let/const区别](#docs/es6/es6_var_let_const)
+1. [箭头函数](#docs/es6/es6_function_jt)
 1. [字符串的扩展](#docs/es6/es6_string)
 1. [正则的扩展](#docs/es6/es6_regex)
 1. [数值的扩展](#docs/es6/es6_number)
@@ -72,7 +73,6 @@
 1. [Symbol](#docs/es6/es6_symbol)
 1. [Proxy](#docs/es6/es6_proxy)
 1. [Reflect](#docs/es6/es6_reflect)
-1. [var/let/const](#docs/es6/es6_var_let_const)
 1. [Generator](#docs/es6/es6_generator)
 1. [Class](#docs/es6/es6_class)
 1. [Promise](#docs/es6/es6_promise)
