@@ -43,3 +43,9 @@
 - [动画轨道](http://jeremyckahn.github.io/stylie/)
 - [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
 - [背景图标坐标位置获取](http://www.spritecow.com/)
+
+
+## 移动端bug汇总
+- [手机端各种奇葩问题总录](https://github.com/zhongDZ/zhongdz.github.com/issues/37)
+- [移动端汇总](https://github.com/jtyjty99999/mobileTech)
+- [腾讯移动汇总](https://github.com/AlloyTeam/Mars)

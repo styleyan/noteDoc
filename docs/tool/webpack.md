@@ -1,7 +1,8 @@
 # webpack配置
 
-- [webpack2.2文档](https://webpack.js.org/concepts/)
-- [webpack2.2中文版文档](https://doc.webpack-china.org/)
+- [webpack2.2文档英文版](https://webpack.js.org/concepts/)
+- [webpack2.2中文版](https://doc.webpack-china.org/)
+- [css888 - webpack2.2中文版文档](http://www.css88.com/doc/webpack2/)
 - [webpack2新特性](https://github.com/dwqs/blog/issues/46)
 - [webpack2升级指南](https://segmentfault.com/a/1190000008181955)
 - [webpack与gulp区别](http://www.cnblogs.com/lovesong/p/6413546.html)

@@ -4,7 +4,7 @@
 [github地址](https://github.com/vuejs/vue-router/tree/next)<br><br>
 [vue-router 2.0 改变的内容(推荐)](https://segmentfault.com/a/1190000006623100)<br>
 [vue-router源码分析-整体流程(推荐)](https://github.com/DDFE/DDFE-blog/issues/9)
-
+[路由实现原理](https://segmentfault.com/a/1190000dddddd999)
 
 ## 路由解析
 ```javascript
