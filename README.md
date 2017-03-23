@@ -38,11 +38,12 @@
 - [segmentfault](https://segmentfault.com/)
 
 
-## css工具
+## 工具
 - [easings缓动函数](http://easings.net/zh-cn)
 - [动画轨道](http://jeremyckahn.github.io/stylie/)
 - [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
 - [背景图标坐标位置获取](http://www.spritecow.com/)
+- [百度流量研究院](http://tongji.baidu.com/data/)
 
 
 ## 移动端bug汇总
