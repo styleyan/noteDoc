@@ -39,7 +39,19 @@
 
 
 ## css工具
-- [easings缓动函数](http://easings.net/zh-cn)
-- [动画轨道](http://jeremyckahn.github.io/stylie/)
 - [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
+- [easings缓动函数](http://easings.net/zh-cn)
+- [css3 动画轨道线制作](http://jeremyckahn.github.io/stylie/)
+- [css3 动画在线制作](http://css3lib.alloyteam.com/#animation/demo3)
+- [css3 渐变在线制作](http://www.colorzilla.com/gradient-editor/)
 - [背景图标坐标位置获取](http://www.spritecow.com/)
+
+
+## css3库
+- [css3动画看 抖动](http://elrumordelaluz.github.io/csshake/)
+- [css3动画库 animate.css](https://github.com/daneden/animate.css)
+- [css3动画库 Hover.css](http://ianlunn.github.io/Hover/)
+
+
+## 图标库
+- [阿里巴巴矢量图标库](http://www.iconfont.cn/plus)
