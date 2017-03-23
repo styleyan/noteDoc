@@ -38,13 +38,16 @@
 - [segmentfault](https://segmentfault.com/)
 
 
-## css工具
+## 工具
+- [easings缓动函数](http://easings.net/zh-cn)
+- [动画轨道](http://jeremyckahn.github.io/stylie/)
 - [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
 - [easings缓动函数](http://easings.net/zh-cn)
 - [css3 动画轨道线制作](http://jeremyckahn.github.io/stylie/)
 - [css3 动画在线制作](http://css3lib.alloyteam.com/#animation/demo3)
 - [css3 渐变在线制作](http://www.colorzilla.com/gradient-editor/)
 - [背景图标坐标位置获取](http://www.spritecow.com/)
+- [百度流量研究院](http://tongji.baidu.com/data/)
 
 
 ## css3库
@@ -55,3 +58,9 @@
 
 ## 图标库
 - [阿里巴巴矢量图标库](http://www.iconfont.cn/plus)
+
+
+## 移动端bug汇总
+- [手机端各种奇葩问题总录](https://github.com/zhongDZ/zhongdz.github.com/issues/37)
+- [移动端汇总](https://github.com/jtyjty99999/mobileTech)
+- [腾讯移动汇总](https://github.com/AlloyTeam/Mars)
