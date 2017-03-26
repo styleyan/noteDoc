@@ -5,5 +5,6 @@
  - [开源 Promise 迷你书](http://liubin.org/promises-book/)
  - [进阶](http://fex.baidu.com/blog/2015/07/we-have-a-problem-with-promises/)
  - [官方定义规范](https://promisesaplus.com/)
+ - [阮一峰的promise对象](http://javascript.ruanyifeng.com/advanced/promise.html#toc0)
 
 

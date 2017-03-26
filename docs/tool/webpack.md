@@ -6,6 +6,8 @@
 - [webpack2新特性](https://github.com/dwqs/blog/issues/46)
 - [webpack2升级指南](https://segmentfault.com/a/1190000008181955)
 - [webpack与gulp区别](http://www.cnblogs.com/lovesong/p/6413546.html)
+- [零构建webpack开发多页面环境](https://github.com/riskers/blog/issues/27)
+- [webpack编译流程](https://github.com/slashhuang/blog/issues/1)
 
 ## webpack作用
 1. 一切都是模块化(js,css,图片等)
@@ -92,14 +94,35 @@ npm run dev
 ```
 
 
-## webpack插件
+## webpack常用的loaders和plugins
+
+#### 代码优化
 ```javascript
-//把所有入口节点的公共代码提取生成一个common.js
-new webpack.optimize.CommonsChunkPlugin('common.js')
-
-//有选择的提取,只提取entry1节点和entry2中的共用部分模块, 生成一个common.js
-new webpack.optimize.CommonsChunkPlugin('common.js',['entry1','entry2']);
-
+CommonsChunkPlugin - 抽取公共代码
+UglifyJsPlugin     - 压缩混淆代码
 ```
 
+#### 依赖注入
+```javascript
+DefinePlugin   - 自由变量注入
+ProvidePlugin  - 模块变量标示符注入
+```
+
+#### 文件抽取
+```javascript
+file-loader       - 传送font等文件
+ExtractTextPlugin - 抽取css文件
+```
+
+#### 开发体验优化
+```javascript
+WebpackNotifierPlugin - 编译完成动态通知
+HtmlWebpackPlugin     - 采用模板引擎形式注入到html文件，让开发更加easy
+```
+
+#### 目录/文件拷贝
+```javascript
+CopyWebpackPlugin - 目录及文件拷贝
+```
+[webpack2插件列表](https://webpack.js.org/plugins/)
 
