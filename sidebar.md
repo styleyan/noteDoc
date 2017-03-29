@@ -33,24 +33,35 @@
 1. [jquery.js](#docs/lib_jquery)
 1. [store.js](#docs/lib_store)
 
+
 ## vue使用笔记
 1. [computed/watch](#docs/vueNotebook/cw)
 1. [组件之间通信几种方法](#docs/vueNotebook/message)
 1. [axios Ajax请求](#docs/vueNotebook/axios)
+1. [实现双向绑定](#docs/vueNotebook/mvvm)
 
 
 ## 前端安全
-1. [XSS/CSRF](#docs/security)
+1. [XSS](#docs/security/xss)
+1. [CSRF](#docs/security/csrf)
+
+
+<!-- ## http
+1. [http缓存](#docs/http/hc) -->
+
 
 ##nodeJs
+1. [node指南](#docs/node/node_info)
 1. [Express.js](#docs/node/lib_Express_des)
-    2. [响应ajax请求](#docs/node/lib_Express_post)
-    2. [添加socket.io](#docs/node/lib_Express_socketio)
-    2. [express 允许跨域](#docs/node/lib_Express_cors)
-2. [node实用模块](#docs/node/node_module)
+    1. [响应ajax请求](#docs/node/lib_Express_post)
+    1. [添加socket.io](#docs/node/lib_Express_socketio)
+    1. [express 允许跨域](#docs/node/lib_Express_cors)
+1. [node实用模块](#docs/node/node_module)
+
 
 ##性能优化
 1. [性能优化文章](#docs/optimal)
+
 
 ## 前端监控
 1. [数据监控](#docs/data_watch)
@@ -62,6 +73,7 @@
 
 
 ##ES6笔记
+1. [es6指南](#docs/es6/es6_info)
 1. [var/let/const区别](#docs/es6/es6_var_let_const)
 1. [箭头函数](#docs/es6/es6_function_jt)
 1. [字符串的扩展](#docs/es6/es6_string)
@@ -71,7 +83,7 @@
 1. [函数的扩展](#docs/es6/es6_function)
 1. [对象的扩展](#docs/es6/es6_object)
 1. [Symbol](#docs/es6/es6_symbol)
-1. [Proxy](#docs/es6/es6_proxy)
+1. [Proxy(代理)](#docs/es6/es6_proxy)
 1. [Reflect](#docs/es6/es6_reflect)
 1. [Generator](#docs/es6/es6_generator)
 1. [Class](#docs/es6/es6_class)
@@ -81,6 +93,7 @@
 1. [Module](#docs/es6/es6_module)
 1. [Iterator、for...of](#docs/es6/es6_Iterator_for_of)
 1. [RegExp](#docs/es5/es5_RegExp)
+
 
 ##HTML5
 1. [HTML 5 概览](#docs/html5/outline)

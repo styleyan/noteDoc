@@ -9,7 +9,6 @@
 ## 学习博客
 - [myron](http://www.myronliu.com/)
 - [CSS探索之旅](http://blog.doyoe.com/)
-- [ECMAScript 6 入门(阮一峰)](http://es6.ruanyifeng.com/)
 - [w3ctech](https://www.w3ctech.com/)
 - [腾讯AlloyTeam](http://www.alloyteam.com/)
 - [大前端工具集](http://www.fefork.com/fetool/)
@@ -20,6 +19,7 @@
 - [justjavac(迷渡)](http://justjavac.com/)
 - [CMAScript5.1中文版](http://yanhaijing.com/es5/#null)
 - [Taobao FED 淘宝前端团队](http://taobaofed.org/)
+- [Jerry Qu](https://imququ.com/)
 
 
 ## 前端导航栏

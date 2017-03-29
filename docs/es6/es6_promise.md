@@ -11,3 +11,4 @@
  - [阮一峰Promise对象](http://javascript.ruanyifeng.com/advanced/promise.html#toc0)
 
 
+
