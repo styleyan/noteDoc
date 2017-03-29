@@ -6,4 +6,6 @@
 - [叶小钗数据可视化系统](https://github.com/yexiaochai/medlog)
 - [7天打造前端性能监控系统](http://fex.baidu.com/blog/2014/05/build-performance-monitor-in-7-days/)
 - [如何搭建 Web 前端性能监控系统的](https://www.zhihu.com/question/37585246?sort=created)
+- [前端性能——监控起步](http://www.cnblogs.com/chuaWeb/p/PerformanceMonitoring.html)
+
 
