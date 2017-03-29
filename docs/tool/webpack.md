@@ -7,6 +7,7 @@
 - [webpack编译流程](https://github.com/slashhuang/blog/issues/1)
 - [多页面/入口支持打包](http://www.cnblogs.com/sloong/p/5689162.html)
 - [阮一峰webpack配置](https://github.com/ruanyf/webpack-demos)
+- [2.0 webpack 配置分析](https://zhuanlan.zhihu.com/p/24322005)
 
 
 ## webpack命令

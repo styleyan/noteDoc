@@ -3,7 +3,7 @@
 ## 学习相关网站
 - [Vue.js资源分享(推荐)](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md)
 - [Vue相关开源项目库汇总(特别推荐)](https://github.com/opendigg/awesome-github-vue)
-- [2.0 webpack 配置分析](https://zhuanlan.zhihu.com/p/24322005)
+- [饿人谷-方方(特别推荐)](https://github.com/jirengu-inc/jrg-project-5)
 
 
 ## vue Ui组件
