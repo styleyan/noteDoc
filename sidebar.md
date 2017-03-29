@@ -77,7 +77,7 @@
 1. [Class](#docs/es6/es6_class)
 1. [Promise](#docs/es6/es6_promise)
 1. [Decorator](#docs/es6/es6_decorator)
-1. [Set、Map、WeakMap](#docs/es6/es6_decorator)
+1. [Set、Map、WeakMap、WeakSet](#docs/es6/es6_decorator)
 1. [Module](#docs/es6/es6_module)
 1. [Iterator、for...of](#docs/es6/es6_Iterator_for_of)
 1. [RegExp](#docs/es5/es5_RegExp)

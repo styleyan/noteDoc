@@ -6,4 +6,5 @@
 - [使用Service worker实现加速](http://mp.weixin.qq.com/s/y8zgMC7BIhdcms7qQG4oEw)
 - [2017前端性能优化清单](https://github.com/Findow-team/Blog/issues/11)
 - [浅析渲染引擎与前端优化](http://jdc.jd.com/archives/2806)
+- [你是如何做性能优化的（推荐）](https://zhuanlan.zhihu.com/p/22756207)
 

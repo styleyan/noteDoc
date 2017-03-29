@@ -58,9 +58,15 @@
 
 ## 图标库
 - [阿里巴巴矢量图标库](http://www.iconfont.cn/plus)
+- [fontawesome](http://fontawesome.dashgame.com/)
+- [fontello](http://fontello.com/)
 
 
 ## 移动端bug汇总
 - [手机端各种奇葩问题总录](https://github.com/zhongDZ/zhongdz.github.com/issues/37)
 - [移动端汇总](https://github.com/jtyjty99999/mobileTech)
 - [腾讯移动汇总](https://github.com/AlloyTeam/Mars)
+
+
+## 前端模版
+- [dot](http://tech.meituan.com/dot.html)
