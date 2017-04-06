@@ -4,6 +4,7 @@
 - [Vue.js资源分享(推荐)](https://github.com/maidishike/FrontEnd-Wikis/blob/master/vuejs.md)
 - [Vue相关开源项目库汇总(特别推荐)](https://github.com/opendigg/awesome-github-vue)
 - [饿人谷-方方(特别推荐)](https://github.com/jirengu-inc/jrg-project-5)
+- [滴滴出行vue源码解析](https://github.com/DDFE/DDFE-blog#vue系列)
 
 
 ## vue Ui组件
@@ -28,10 +29,9 @@
 -  [官方推荐的ajax模块](https://github.com/mzabriskie/axios)
 
 
-## 入门例子地址
+## 例子地址
 - [vue-demo-kugou](https://github.com/lavyun/vue-demo-kugou)
 - [从零构建vue2 + vue-router + vuex 开发环境到入门](https://github.com/lzxb/vue2-demo)
-- [用Vue.js开发微信app界面](https://github.com/useryangtao/vue-wechat)
 - [vue.js实例项目](https://www.zhihu.com/question/37984203)
 - [高仿饿了么](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
 - [高仿网易云音乐](https://github.com/javaSwing/NeteaseCloudWebApp)

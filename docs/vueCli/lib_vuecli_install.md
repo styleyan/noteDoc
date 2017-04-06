@@ -1,6 +1,8 @@
 # cli模块引用
 与express-generator类似方便用户初始化项目骨架,【[vue-cli官网地址](https://github.com/vuejs/vue-cli)】
 
+- [vue-cli#2.0webpack配置分析](https://github.com/DDFE/DDFE-blog/issues/10)
+
 ## vue-cli构架项目
 【[vue-cli 2.0 webpack 配置说明](http://www.cnblogs.com/nmxs/p/6206306.html);】<br>
 `版本：node >= v6.60  npm >= 3.10.3`

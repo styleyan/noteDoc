@@ -156,4 +156,17 @@ nrm use localhost
 npm install xxxx
 ```
 
+13)、`http-proxy-middleware 解决开发环境的跨域问题`
+```javascript
+proxyTable: {
+  '/list': {
+    target: 'http://api.xxxxxxxx.com',
+    changeOrigin: true,
+    pathRewrite: {
+      '^/list': '/list'
+    }
+  }
+}
+```
+
 
