@@ -162,6 +162,21 @@ var filtered = arrs.filter(function(val){
 ## reduceRight()
 
 ## some()
+`测试数组中的某些元素是否通过了指定函数的测试,返回为true停止循环`
+```javascript
+var arrs = [3,4,5,6,7,8];
+//一直循环到结束，结果返回false
+var result = arrs.some(function(val){
+	console.log('result');
+	return val > 10;
+});
+
+//只循环2次
+var result = arrs.some(function(val){
+	console.log('result');
+	return val > 3;
+});
+```
 
 ## toString()
 
