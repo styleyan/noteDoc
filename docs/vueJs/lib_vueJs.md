@@ -5,6 +5,7 @@
 - [Vue相关开源项目库汇总(特别推荐)](https://github.com/opendigg/awesome-github-vue)
 - [饿人谷-方方(特别推荐)](https://github.com/jirengu-inc/jrg-project-5)
 - [滴滴出行vue源码解析](https://github.com/DDFE/DDFE-blog#vue系列)
+- [知乎Vue.js使用心得](https://www.zhihu.com/question/38213423)
 
 
 ## vue Ui组件

@@ -121,6 +121,21 @@ for(let e of iterator){
 
 
 ## every()
+`测试数组所有的元素是否都通过了指定函数的测试，并返回true/false`
+```javascript
+var arr = [3,4,5,6,7,8];
+
+var result = arr.every(function(val,index,arr){
+	return val > 8;
+});
+console.log(result)  // false
+
+var result2 = arr.every(function(val,index,arr){
+	return val > 2;
+});
+console.log( result2 )  // true
+```
+
 
 ## fill()
 
@@ -147,7 +162,7 @@ var filtered = arrs.filter(function(val){
 `对数组的每一个元素执行一次提供的函数;`
 
 ## includes()
-`判断当前数组是否包含某指定的值，如果是，则返回true,否则放回false。
+`判断当前数组是否包含某指定的值，如果是，则返回true,否则放回false。`
 
 ## indexOf()
 
@@ -156,6 +171,15 @@ var filtered = arrs.filter(function(val){
 ## lastIndexOf()
 
 ## map()
+`遍历数组中的每一个数，并返回一个新数组`
+```javascript
+var arrNum = [2,3,4,5];
+var roots = arrNum.map(function(currentValue,index,array){
+	return currentValue*2;
+});
+console.log(arrNum) // [2,3,4,5]
+console.log(roots)  // [4,6,8,10]
+```
 
 ## reduce()
 
