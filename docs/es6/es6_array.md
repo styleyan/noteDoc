@@ -129,15 +129,12 @@ toString.call([1,2,3])       // '[object Array]'
 
 ## copyWithin() 
 
-## entries() / keys()
-`返回一个新的Array iterator对象，该对象包含数组中每个索引的键/值对。`
+## entries() / keys() /values()
+`entries()，keys()和values() —— 用于遍历数组。它们都返回一个迭代对象。`可以用for...of循环进行遍历，唯一的区别是keys()是对键名的遍历、values()是对键值的遍历，entries()是对键值对的遍历
 ```javascript
 var arr = ['a','b','c','d'];
+/* ====================== entries方法 ================== */
 var iterator = arr.entries();
-
-console.log(iterator.next().value); // [0,'a']
-
-//使用for...of循环
 for(let e of iterator){
 	console.log(e)
 }
@@ -145,6 +142,32 @@ for(let e of iterator){
 // [1,'b']
 // [2,'c']
 // [3,'d']
+//手动调用next()
+iterator.next()  // {done: false,value:[0,'a']}
+
+/* ====================== keys方法 ================== */
+var arrKeys = arr.keys();
+for (let index of arrKeys) {
+	console.log( index )
+}
+// 0
+// 1
+// 2
+// 3
+//手动调用next()
+arrKeys.next()  //  {value: 0, done: false}
+
+/* ================= values方法(谷歌浏览器未实现) ============== */
+var arrValues = arr.values();
+for( let val of arrValues ){
+	console.log(val)
+}
+// a
+// b
+// c
+// d
+//手动调用next()
+arrKeys.next()  //  {value: 'a', done: false}
 ```
 
 ## every()
@@ -163,8 +186,14 @@ var result2 = arr.every(function(val,index,arr){
 console.log( result2 )  // true
 ```
 
-## fill()
-
+## fill(value,start,end)
+`该方法将一个数组的所有元素从开始索引填充到具有静态值的结束索引，返回修改后的数组，会改变原数组值`<br>
+如果start，end 是个负数, 则结束索引会被自动计算成为 length+end。
+```javascript
+var arr = [1,2,3,4];
+arr.file('a');
+// ['a','a','a','a']
+```
 
 ## filter()
 `使用指定的函数测试所有元素，并创建一个包含所有通过测试的元素的新数组`。
@@ -199,8 +228,22 @@ arr.findIndex(function(val){
 ```
 
 
-## forEach()
+## forEach(callback(val,index,array))
 `对数组的每一个元素执行一次提供的函数;`
+```javascript
+let a = ['a','b','c'];
+a.forEach(function(val){
+	console.log(val);
+});
+// a
+// b
+// c
+```
+与for循环区别:<br>
+1)、forEach 无法通过 return、break、continue中断循环;<br>
+2)、forEach 对于空数组会跳过,如: [2, 5, ,9],排除 [''],[undefined]<br>
+3)、在遍历中已删除项不会被遍历到，for会显示出undefined<br>
+
 
 ## includes()
 `判断当前数组是否包含某指定的值，如果是，则返回true,否则放回false。`
