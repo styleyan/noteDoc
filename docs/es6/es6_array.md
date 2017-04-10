@@ -90,18 +90,46 @@ console.log(myArray) // ['three','two','one']
 ## sort()
 
 
-
-## join()
-
 ## from()
+`该方法从一个类似数组或可迭代对象创建一个新的数组实例`
+```javascript
+const bar = ['a','b','c'];
+Array.from(bar)  //['a','b','c']
+
+Array.from('foo') // ['f','o','o']
+
+//在es3中通过slice方法来转换
+var str = 'foo';
+Array.prototype.slice.call(str);  // ['f','o','o']
+```
 
 ## of()
+`该方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型`,Array.of() 和 Array 构造函数之间的区别在于处理整数参数：Array.of(7)创建一个具有单个元素7的数组，而Array(7)创建一个包含7个undefined元素的数组。
+```javascript
+Array.of(7)      // [7]
+Array.of(1,2,3); // [1,2,3]
+
+//使用 Array 创建
+Array(7)         // [,,,,,,,,]
+Array(1,2,3)     // [1,2,3]
+```
 
 ## isArray()
+`该方法用于确定传递的值是否为Array`
+```javascript
+Array.isArray([1,2,3,4])     // true
+Array.isArray({foo: 123})    // false
+Array.isArray('foobar')      // false
+Array.isArray(undefined)	 // false
 
-## copyWithin()
+//在es3中是通过toString()方法来判断
+toString.call([1,2,3])       // '[object Array]'
+```
 
-## entries()
+
+## copyWithin() 
+
+## entries() / keys()
 `返回一个新的Array iterator对象，该对象包含数组中每个索引的键/值对。`
 ```javascript
 var arr = ['a','b','c','d'];
@@ -119,7 +147,6 @@ for(let e of iterator){
 // [3,'d']
 ```
 
-
 ## every()
 `测试数组所有的元素是否都通过了指定函数的测试，并返回true/false`
 ```javascript
@@ -136,14 +163,13 @@ var result2 = arr.every(function(val,index,arr){
 console.log( result2 )  // true
 ```
 
-
 ## fill()
+
 
 ## filter()
 `使用指定的函数测试所有元素，并创建一个包含所有通过测试的元素的新数组`。
 ```javascript
 var arrs = [5,6,7,8,9,0,22,33,4,5];
-
 var filtered = arrs.filter(function(val){
 	return value >= 9;
 });
@@ -152,10 +178,25 @@ var filtered = arrs.filter(function(val){
 ```
 
 ## find()
+`该方法返回数组中满足提供测试函数的第一个元素的值，否则返回undefined。`
+```javascript
+var arr = [2,3,5,6,7,8];
 
+// 得到 7;
+arr.find(function(val){
+	return val > 6;
+});
+```
 
 ## findIndex()
 `findIndex()方法返回数组中满足提供测试函数的第一个元素的索引。否则返回-1;`
+```javascript
+var arr = [12,3,4,5,66];
+//得到 4;
+arr.findIndex(function(val){
+	return val > 20;
+})
+```
 
 
 ## forEach()
@@ -166,7 +207,6 @@ var filtered = arrs.filter(function(val){
 
 ## indexOf()
 
-## keys()
 
 ## lastIndexOf()
 
@@ -202,6 +242,7 @@ var result = arrs.some(function(val){
 });
 ```
 
-## toString()
+## toString()/join()
+
 
 ## [@@iterator]()
