@@ -53,7 +53,7 @@ console.log(arr2);   //  [6,7]
 
 ## splice(start,deletCount,item1,item2,item3....)
 `该方法通过删除现有元素/添加新元素来更改原数组的内容, 并以新数组形式返回删除的数。`
-```javascrit
+```javascript
 var myTest = ['a','b','c','d'];
 //添加到数组
 myTest.splice(2,0,'bbbb') // ["a", "b", "bbbb", "c", "d"]
@@ -170,20 +170,23 @@ for( let val of arrValues ){
 arrKeys.next()  //  {value: 'a', done: false}
 ```
 
-## every()
+## every() / some()
 `测试数组所有的元素是否都通过了指定函数的测试，并返回true/false`
 ```javascript
 var arr = [3,4,5,6,7,8];
 
+// every方法,return得到false值就会停止调用
 var result = arr.every(function(val,index,arr){
 	return val > 8;
 });
-console.log(result)  // false
+console.log(result)  // false  只循环1次
 
-var result2 = arr.every(function(val,index,arr){
-	return val > 2;
+// some方法,return得到true值就会停止调用
+var result = arrs.some(function(val){
+	console.log('result');
+	return val > 3;
 });
-console.log( result2 )  // true
+console.log(result)  //true  只循环1次
 ```
 
 ## fill(value,start,end)
@@ -245,13 +248,41 @@ a.forEach(function(val){
 3)、在遍历中已删除项不会被遍历到，for会显示出undefined<br>
 
 
-## includes()
-`判断当前数组是否包含某指定的值，如果是，则返回true,否则放回false。`
+## includes(searchValue,fromIndex)
+`判断当前数组是否包含某指定的值，如果是，则返回true,否则放回false。`<br>
+如果fromIndex为负值，则按升序从array.length + fromIndex 的索引开始搜索，默认为0。
+```javascript
+var a = [1,2,3];
+a.includes(2);  // true
+a.includes(4);  // false
+```
 
-## indexOf()
+## indexOf(searchElement,fromIndex)
+`该方法返回在数组中可以找到给定元素的第一个索引值，如果不存在，则返回 -1。`<br>
+fromIndex查找规则：<br>
+1)、索引值大于或等于数组长度，不会在数组中查找<br>
+2)、如果索引小于0，如-1从数组倒数第一个元素查找，-2从数组倒数第二个开始查找，以此类推<br>
+3)、如果索引值加上数组length，仍然小于0，则整个数组将会被查询<br>
 
+```javascript
+var a = [2,3,9,9];
+a.indexOf(2)   // 0 ;
+a.indexOf(7)   // -1 ;
+```
 
-## lastIndexOf()
+## lastIndexOf(searchElement,fromIndex)
+`改方法返回指定元素在数组中最后一个索引，如果不存在则返回-1。`<br>
+查找规则：<br>
+1)、默认从数组的长度减1开始，则整个数组都被查找<br>
+2)、该值大于或等于数组长度，则整个数组都被查找<br>
+3)、如果该值为负数，其绝对值大于数组长度，则数组不会被查找
+```javascript
+var array = [2,5,9,2];
+array.lastIndexOf(2)    // 3
+array.lastIndexOf(7)    // -1
+array.lastIndexOf(2,9)  // 3
+array.lastIndexOf(2,-9) // -1
+```
 
 ## map()
 `遍历数组中的每一个数，并返回一个新数组`
@@ -265,25 +296,17 @@ console.log(roots)  // [4,6,8,10]
 ```
 
 ## reduce()
+`该方法对累加器和数组中的每个元素(从左到右)，将其减少为单个值。`
+```javascript
+let sum = [1,2,3];
+let result = sum.reduce(function(acc,val){
+	return acc + val;
+});
+// result
+```
+
 
 ## reduceRight()
-
-## some()
-`测试数组中的某些元素是否通过了指定函数的测试,返回为true停止循环`
-```javascript
-var arrs = [3,4,5,6,7,8];
-//一直循环到结束，结果返回false
-var result = arrs.some(function(val){
-	console.log('result');
-	return val > 10;
-});
-
-//只循环2次
-var result = arrs.some(function(val){
-	console.log('result');
-	return val > 3;
-});
-```
 
 ## toString()/join()
 

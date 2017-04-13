@@ -12,7 +12,6 @@
 - [w3ctech](https://www.w3ctech.com/)
 - [腾讯AlloyTeam](http://www.alloyteam.com/)
 - [大前端工具集](http://www.fefork.com/fetool/)
-- [imweb前端社区](http://imweb.io/)
 - [使用 Express + MongoDB 搭建多人博客](https://maninboat.gitbooks.io/n-blog/content/)
 - [ajax学习体系](http://louiszhai.github.io/2016/11/02/ajax/)
 - [梁少峰的博客（推荐）](https://github.com/youngwind/blog)
@@ -21,11 +20,12 @@
 - [Taobao FED 淘宝前端团队](http://taobaofed.org/)
 - [Jerry Qu](https://imququ.com/)
 
-
-## 前端导航栏
-- [MDN(JavaScript 参考文档)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference)
+## 前端周刊
 - [奇舞周刊](http://www.kancloud.cn/weekly/www-75team/186824)
 - [前端周刊](http://www.feweekly.com/)
+
+
+## 前端导航栏
 - [36镇](http://www.36zhen.com/t?id=2549)
 - [前端圈](http://sentsin.com/daohang/)
 - [猫的前端回忆录(推荐)](https://github.com/windiest/Front-end-tutorial)
@@ -37,12 +37,13 @@
 
 ## 前端论坛
 - [segmentfault](https://segmentfault.com/)
+- [stackoverflow](http://stackoverflow.com/)
 
 
 ## 工具
 - [easings缓动函数](http://easings.net/zh-cn)
 - [动画轨道](http://jeremyckahn.github.io/stylie/)
-- [css3属性各浏览器支持情况](http://caniuse.com/#search=search)
+- [caniuse查兼容性](http://caniuse.com/#search=search)
 - [easings缓动函数](http://easings.net/zh-cn)
 - [css3 动画轨道线制作](http://jeremyckahn.github.io/stylie/)
 - [css3 动画在线制作](http://css3lib.alloyteam.com/#animation/demo3)
