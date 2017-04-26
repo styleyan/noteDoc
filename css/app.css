@@ -112,6 +112,9 @@ input[type=search] {
     text-align: left;
 }
 
+#myTest{
+    width: 20px;
+}
 
 #content {
     padding-top: 10px;
