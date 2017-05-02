@@ -1,5 +1,5 @@
 # 数组
-参考文章：
+参考文章列表：
 - [MDN Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
@@ -127,7 +127,7 @@ toString.call([1,2,3])       // '[object Array]'
 ```
 
 
-## copyWithin() 
+## copyWithin()
 
 ## entries() / keys() /values()
 `entries()，keys()和values() —— 用于遍历数组。它们都返回一个迭代对象。`可以用for...of循环进行遍历，唯一的区别是keys()是对键名的遍历、values()是对键值的遍历，entries()是对键值对的遍历
@@ -206,7 +206,7 @@ var filtered = arrs.filter(function(val){
 	return value >= 9;
 });
 
-//得到新数组：[9,22,33]   
+//得到新数组：[9,22,33]
 ```
 
 ## find()
