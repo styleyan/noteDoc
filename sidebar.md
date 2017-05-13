@@ -53,11 +53,13 @@
 
 ##nodeJs
 1. [node指南](#docs/node/node_info)
-1. [Express.js](#docs/node/lib_Express_des)
-    1. [响应ajax请求](#docs/node/lib_Express_post)
-    1. [添加socket.io](#docs/node/lib_Express_socketio)
-    1. [express 允许跨域](#docs/node/lib_Express_cors)
 1. [node实用模块](#docs/node/node_module)
+1. [Express.js](#docs/node/lib_Express_des)
+  1. [响应ajax请求](#docs/node/lib_Express_post)
+  1. [添加socket.io](#docs/node/lib_Express_socketio)
+  1. [express 允许跨域](#docs/node/lib_Express_cors)
+1. [Koa2.js](#docs/koa2/info)
+	1. [通过async实现延迟响应](#docs/koa2/async)
 
 
 ##性能优化
