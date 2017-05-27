@@ -126,5 +126,53 @@ var vm = new Vue({
 
 
 
+## 使用v-model进行通信
+```javascript
+  Vue.component('my-component', {
+    template: `<div>{{currentVal}}这是：，<button @click="foo">传递</button></div>`,
+    props: ['value'], // 必须
+    data() {
+      return {
+        currentVal: this.value // 必须
+      }
+    },
+    // 必须
+    watch: {
+      currentVal(val) {
+        this.$emit('input', val)
+      },
+      value(val){
+        this.currentVal = val
+      }
+    },
+    methods: {
+      foo() {
+        this.currentVal++
+      },
+    },
+  })
+
+  var appMain = new Vue({
+    el: '#app',
+    data: {
+      num: 3,
+    },
+    methods: {
+      clickMe() {
+        this.num ++
+      }
+    }
+  })
+```
+`html`
+```html
+<div id="app">
+  <p>总次数：{{ total }}</p>
+  <button @click="parentClick">调子组件</button>
+  <simple ref="children"></simple>
+</div>
+```
+
+
 
 ## vuex
