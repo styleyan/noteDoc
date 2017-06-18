@@ -55,6 +55,10 @@ console.log(JSON.stringify(data, null, 4))
 npm install supervisor -g
 ```
 
+6)、`nodemon 监视应用文件修改时候重启应用程序`
+```javascript
+npm install nodemon -g
+```
 
 <br>
 6)、`node-notifier  桌面通知模块`
@@ -86,7 +90,7 @@ npm install opn
 var opn = require('opn');
 var uri = 'http://localhost:' + port;
 console.log('Listening at：' + uri + '\n');
-opn(uri); 	
+opn(uri);
 ```
 
 9)、`cors express允许跨域模块`

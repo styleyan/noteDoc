@@ -19,6 +19,7 @@
 - [CMAScript5.1中文版](http://yanhaijing.com/es5/#null)
 - [Taobao FED 淘宝前端团队](http://taobaofed.org/)
 - [Jerry Qu](https://imququ.com/)
+- [京东凹凸实验室](https://aotu.io/)
 
 ## 前端周刊
 - [奇舞周刊](http://www.kancloud.cn/weekly/www-75team/186824)
