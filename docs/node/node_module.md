@@ -183,4 +183,18 @@ const chalk = require('chalk')
 console.log(chalk.blue('Hell world'))  // 控制台提示文字颜色为红色
 ```
 
+15)、`ora 控制台显示loading效果模块，并可显示成功、失败、警告之类状态`
+```javascript
+// 安装
+npm install --save ora
+
+// 使用
+const ora = require('ora');
+const spinner = ora('Loading unicorns').start();
+setTimeout(() => {
+  spinner.color = 'yellow';
+  spinner.text = 'Loading rainbows';
+}, 1000);
+```
+
 
