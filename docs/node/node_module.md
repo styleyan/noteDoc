@@ -173,4 +173,14 @@ proxyTable: {
 }
 ```
 
+14)、`chalk console.log 输出不同颜色的模块`
+```javascript
+// 安装
+npm install chalk
+
+// 使用方法
+const chalk = require('chalk')
+console.log(chalk.blue('Hell world'))  // 控制台提示文字颜色为红色
+```
+
 
