@@ -1,6 +1,8 @@
 # eslint配置说明
 
-`eslint的rules配置详细中英对照` [点击查看官网](http://eslint.org/docs/rules/)
+- `eslint的rules配置详细中英对照` [点击查看官网](http://eslint.org/docs/rules/)
+- [AlloyTeam ESLint 配置指南](http://www.alloyteam.com/2017/08/13065/)
+
 ```javascript
 module.exports = {
   // 允许指定校验的ecma的版本，及ecma的一些特性
