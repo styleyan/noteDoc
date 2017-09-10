@@ -29,6 +29,7 @@
 - [猫的前端回忆录](https://github.com/windiest/Front-end-tutorial)
 - [前端资源系列](https://segmentfault.com/a/1190000007062464)
 - [十大经典排序算法](https://sort.hust.cc/1.bubbleSort.html)
+- [算法实践](https://github.com/styleyan/Algo-Practice)
 - [ajax学习体系](http://louiszhai.github.io/2016/11/02/ajax/)
 - [饥人谷](https://zhuanlan.zhihu.com/study-fe)
 - [如何通过饿了么Node.js面试](https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn)
