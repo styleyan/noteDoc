@@ -1,5 +1,8 @@
 #  http协议笔记
 
+### 推荐文章
+- [阮一峰 HTTP协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
+
 ## 设置缓存
 ```javascript
 //public表示代理服务器和浏览器都可以缓存60秒
