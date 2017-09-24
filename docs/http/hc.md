@@ -4,6 +4,7 @@
 - [阮一峰 HTTP协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
 - [TCP/IP协议族的构成](https://segmentfault.com/a/1190000011265376)
 - [HTTP/2 Server Push 详解](https://segmentfault.com/p/1210000009594280/read)
+- [掌握 HTTP 缓存——从请求到响应过程的一切](https://segmentfault.com/a/1190000008538177)
 
 ## 设置缓存
 ```javascript
