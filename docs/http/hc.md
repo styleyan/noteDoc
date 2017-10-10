@@ -5,6 +5,7 @@
 - [TCP/IP协议族的构成](https://segmentfault.com/a/1190000011265376)
 - [HTTP/2 Server Push 详解](https://segmentfault.com/p/1210000009594280/read)
 - [掌握 HTTP 缓存——从请求到响应过程的一切](https://segmentfault.com/a/1190000008538177)
+- [一文读懂 HTTP/2 特性](https://tech.upyun.com/article/227/%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%20HTTP%2F2%20%E7%89%B9%E6%80%A7.html)
 
 ## 设置缓存
 ```javascript
