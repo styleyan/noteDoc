@@ -59,7 +59,7 @@
   1. [express 允许跨域](#docs/node/lib_Express_cors)
 1. [Koa2.js](#docs/koa2/info)
 	1. [通过async实现延迟响应](#docs/koa2/async)
-
+1. [npm包常用命令](#docs/node/npm)
 
 ##性能优化
 1. [性能优化文章](#docs/optimal)
