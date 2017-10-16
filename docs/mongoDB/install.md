@@ -16,6 +16,7 @@ db.imooc_collection(表名).find() // 查看表中的数据,find为空时查询�
 use admin // 切换到admin数据库
 show dbs // 查看当前系统中有多少数据库
 show collections // 查看创建的表
+show tables // 查看库下有多少表格
 for (i=3;i<100;i++) db.imooc_collection.insert({x:i}) // js语法插入
 db.imooc_collection.find().count() // count() 查看多少数据数量
 db.imooc_collection.find().skip() // skip() 跳过
@@ -33,5 +34,13 @@ db.imooc_collection.remove({aa:1}) // 删除查找到aa的所有数据,find方�
 db.imooc_collection.drop() // drop()方法，删除表中的所有数据
 
 // 索引查询 3.6课
-
+db.imooc_collection.getIndexes() // 查看所有集合索引情况
+db.imooc_collection.ensureIndex({x: 1}) // 创建索引,x:1 正向排序,x:-1 逆向排序
 ```
+
+## 索引的使用
+- 索引的种类与使用
+- 索引的匹配规则
+- 如何建立合适的索引
+- 索引建立的情况评估
+
